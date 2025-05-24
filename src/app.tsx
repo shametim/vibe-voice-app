@@ -27,7 +27,7 @@ export const App = () => {
     },
     {
       title: "The Future of Remote Work (Who Knew Slack Could Be This Exhausting?)",
-      summary: "As hybrid work models become the norm, companies are rethinking office spaces and employee benefits to maintain productivity and engagement.",
+      summary: "As hybrid work models become the norm (and everyone’s living room becomes a Zoom backdrop), companies are rethinking office spaces and employee benefits to maintain productivity and engagement.",
       category: 'opinion',
       author: {
         name: "David Leonhardt",
