@@ -22,19 +22,49 @@ export const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-3 bg-blue-50 rounded">
               <h3 className="font-semibold text-blue-700">Continuous Learning</h3>
-              <p className="text-sm text-gray-600 mt-1">I thrive on acquiring new skills and understanding complex systems.</p>
+              <p className="text-sm text-gray-600 mt-1">
+                I thrive on acquiring new skills and understanding complex systems. Whether it's diving into
+                emerging technologies like AI or refining my knowledge of software architecture, I'm always
+                looking to grow and adapt.
+              </p>
             </div>
             <div className="p-3 bg-blue-50 rounded">
               <h3 className="font-semibold text-blue-700">Problem Solving</h3>
-              <p className="text-sm text-gray-600 mt-1">I get excited about finding creative solutions to technical challenges.</p>
+              <p className="text-sm text-gray-600 mt-1">
+                I get excited about finding creative solutions to technical challenges. Breaking down complex
+                problems into manageable parts and building elegant solutions is what drives my passion for
+                development.
+              </p>
             </div>
             <div className="p-3 bg-blue-50 rounded">
               <h3 className="font-semibold text-blue-700">Collaboration</h3>
-              <p className="text-sm text-gray-600 mt-1">I believe great things happen when people work together and share knowledge.</p>
+              <p className="text-sm text-gray-600 mt-1">
+                I believe great things happen when people work together and share knowledge. I enjoy working
+                in teams, exchanging ideas, and mentoring others to help everyone grow and succeed.
+              </p>
             </div>
             <div className="p-3 bg-blue-50 rounded">
               <h3 className="font-semibold text-blue-700">Quality Craftsmanship</h3>
-              <p className="text-sm text-gray-600 mt-1">I take pride in creating clean, maintainable code that stands the test of time.</p>
+              <p className="text-sm text-gray-600 mt-1">
+                I take pride in creating clean, maintainable code that stands the test of time. Writing
+                well-documented, scalable, and efficient code is a core part of my development philosophy.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Innovation</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I'm always looking for ways to push boundaries and create something new. Whether it's
+                experimenting with new frameworks or rethinking traditional approaches, innovation is a key
+                part of my journey.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Community Impact</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I believe in using my skills to make a positive impact. Contributing to open-source projects,
+                sharing knowledge through blogs or talks, and helping others learn are all ways I give back
+                to the developer community.
+              </p>
             </div>
           </div>
         </section>
