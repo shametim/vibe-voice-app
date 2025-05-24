@@ -5,7 +5,7 @@ export const App: React.FC = () => {
     <div className="font-sans bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen text-gray-800 flex flex-col items-center justify-start p-4">
       <div className="max-w-3xl w-full">
         <h1 className="text-2xl font-bold font-franklin-gothic-medium p-4 text-blue-500 text-center">
-          Hi! This is [Your Name]
+          Hi! This is Martin
         </h1>
         
         <section className="bg-white rounded-lg shadow-md p-6 mb-8">
