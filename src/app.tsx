@@ -28,7 +28,11 @@ export const App = () => {
     {
       title: "The Future of Remote Work (Who Knew Slack Could Be This Exhausting?)",
       summary: "As hybrid work models become the norm, companies are rethinking office spaces and employee benefits to maintain productivity and engagement.",
-      category: 'opinion'
+      category: 'opinion',
+      author: {
+        name: "David Leonhardt",
+        title: "Columnist"
+      }
     },
     {
       title: "Global Food Prices Reach Record Highs (Your Sandwich Just Got a Raise)",
@@ -53,7 +57,11 @@ export const App = () => {
     {
       title: "Ethics in AI: A Global Conversation (Will My Roomba Start Judging Me?)",
       summary: "World leaders and tech experts are coming together to establish ethical guidelines for the development and use of artificial intelligence.",
-      category: 'opinion'
+      category: 'opinion',
+      author: {
+        name: "The Editorial Board",
+        title: "NYT Editorial"
+      }
     },
     {
       title: "Global Health Initiatives Gain Momentum (Finally, Someone Cares About My Cold!)",
@@ -186,19 +194,22 @@ export const App = () => {
               >
                 <blockquote className="text-gray-800 dark:text-gray-200 italic text-lg md:text-xl leading-relaxed">
                   {article.summary}
+                  <cite className="block mt-4 text-gray-600 dark:text-gray-400 text-sm not-italic">
+                    — {article.author?.name}, {article.author?.title}
+                  </cite>
                 </blockquote>
                 <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0 mr-4">
                     <div className="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-xl">
-                      {article.title.charAt(0)}
+                      {article.author?.name.charAt(0)}
                     </div>
                   </div>
                   <div>
                     <p className="text-gray-800 dark:text-white font-bold">
-                      {article.title.split(' ')[0]}
+                      {article.author?.name}
                     </p>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">
-                      {article.title.split(' ')[1]}
+                      {article.author?.title}
                     </p>
                   </div>
                 </div>
