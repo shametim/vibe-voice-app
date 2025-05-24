@@ -28,29 +28,58 @@ export const App = () => {
       title: "Alien Life Detected on Distant Exoplanet",
       summary: "NASA scientists have confirmed the presence of potential microbial life on a planet 120 light-years away."
     },
+    {
+      title: "Ethics in AI: A Global Conversation",
+      summary: "World leaders and tech experts are coming together to establish ethical guidelines for the development and use of artificial intelligence."
+    },
+    {
+      title: "Global Health Initiatives Gain Momentum",
+      summary: "New partnerships between governments and NGOs are accelerating progress in combating diseases and improving healthcare access worldwide."
+    },
+    {
+      title: "The Rise of Space Tourism",
+      summary: "With companies like Blue Origin and SpaceX leading the charge, space tourism is becoming a reality for wealthy travelers."
+    },
   ];
 
   return (
-    <div className="max-w-3xl mx-auto bg-amber-50 p-8">
-      <h1 className="text-4xl font-bold font-franklin-gothic-medium text-gray-900 mb-6 text-center">
-        The New York Times
-      </h1>
-      <p className="text-lg text-gray-800 font-inter leading-relaxed mb-8">
-        A simple, elegant layout inspired by the classic New York Times design.
-      </p>
-      
-      <div className="grid gap-6 md:grid-cols-2">
-        {articles.map((article, index) => (
-          <div key={index} className="bg-white border border-amber-200 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-red-600 hover:underline cursor-pointer">
-              {article.title}
-            </h2>
-            <p className="text-gray-700 font-inter leading-relaxed">
-              {article.summary}
-            </p>
-          </div>
-        ))}
-      </div>
+    <div className="min-h-screen bg-blue-50 font-sans">
+      {/* Header with Navigation */}
+      <header className="bg-blue-800 text-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold font-franklin-gothic-medium">
+            The New York Times
+          </h1>
+          <nav>
+            <ul className="flex space-x-6">
+              <li><a href="#" className="hover:underline">Home</a></li>
+              <li><a href="#" className="hover:underline">News</a></li>
+              <li><a href="#" className="hover:underline">Opinion</a></li>
+              <li><a href="#" className="hover:underline">World</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-3xl mx-auto bg-white p-8">
+        <p className="text-lg text-gray-800 font-inter leading-relaxed mb-8">
+          A simple, elegant layout inspired by the classic New York Times design.
+        </p>
+        
+        <div className="grid gap-6 md:grid-cols-2">
+          {articles.map((article, index) => (
+            <div key={index} className="bg-white border border-blue-200 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 hover:underline cursor-pointer">
+                {article.title}
+              </h2>
+              <p className="text-gray-700 font-inter leading-relaxed">
+                {article.summary}
+              </p>
+            </div>
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
