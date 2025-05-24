@@ -178,30 +178,21 @@ export const App = () => {
         </p>
         
         {activeTab === 'news' ? (
-          <table className="w-full table-auto border-collapse">
-            <thead>
-              <tr className="bg-green-100 dark:bg-gray-700">
-                <th className="px-4 py-2 text-left text-gray-800 dark:text-white font-bold">Title</th>
-                <th className="px-4 py-2 text-left text-gray-800 dark:text-white font-bold">Summary</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredArticles.map((article, index) => (
-                <tr key={index} className="border-b border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="px-4 py-3">
-                    <h2 className="text-xl font-bold text-gray-800 dark:text-white hover:text-green-600 hover:underline cursor-pointer">
-                      {article.title}
-                    </h2>
-                  </td>
-                  <td className="px-4 py-3">
-                    <p className="text-gray-700 dark:text-gray-300 font-inter leading-relaxed">
-                      {article.summary}
-                    </p>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <ul className="space-y-4">
+            {filteredArticles.map((article, index) => (
+              <li 
+                key={index} 
+                className="border-l-4 border-green-600 pl-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <h2 className="text-xl font-bold text-gray-800 dark:text-white hover:text-green-600 hover:underline cursor-pointer">
+                  {article.title}
+                </h2>
+                <p className="text-gray-700 dark:text-gray-300 font-inter leading-relaxed">
+                  {article.summary}
+                </p>
+              </li>
+            ))}
+          </ul>
         ) : (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {filteredArticles.map((article, index) => (
