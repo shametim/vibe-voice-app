@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="tailwindcss" />
+    <title>Vibe Voice</title>
+    <script type="module" src="./frontend.tsx"></script>
+    <style src="./styles.css"></style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        // Web Speech API setup
+        if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+
+            recognition.continuous = true;
+            recognition.interimResults = false;
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[event.results.length - 1][0].transcript;
+
+                // Create and show the transcript message
+                const message = document.createElement('div');
+                message.className = 'transcript-message';
+                message.textContent = transcript;
+                document.body.appendChild(message);
+
+                // Fade out and remove after 1 second
+                setTimeout(() => {
+                    message.classList.add('fade-out');
+                    setTimeout(() => {
+                        message.remove();
+                    }, 500); // Match the CSS transition duration
+                }, 1000);
+
+                // Send GET request to /run with the instruction parameter
+                fetch(`/run?instruction=${encodeURIComponent(transcript)}`, {
+                    method: 'GET'
+                }).catch(err => {
+                    console.error("Failed to send instruction:", err);
+                });
+
+
+            };
+
+
+            // Start recognition on the first user click
+            const startClickListener = () => {
+                recognition.start();
+                document.removeEventListener('click', startClickListener);
+            };
+
+            document.addEventListener('click', startClickListener);
+        } else {
+            console.error('Web Speech API not supported in this browser.');
+        }
+    </script>
+</body>
+
+</html>
