@@ -15,6 +15,18 @@ export const App = () => {
     {
       title: "Global Food Prices Reach Record Highs",
       summary: "A combination of climate disasters and supply chain disruptions has pushed food prices to unprecedented levels worldwide."
+    },
+    {
+      title: "Breakthrough in Quantum Computing",
+      summary: "Scientists have developed a new quantum encryption method that could make data breaches a thing of the past."
+    },
+    {
+      title: "Global Surge in Renewable Energy Investments",
+      summary: "Countries around the world are pouring billions into solar and wind energy projects to combat climate change."
+    },
+    {
+      title: "Alien Life Detected on Distant Exoplanet",
+      summary: "NASA scientists have confirmed the presence of potential microbial life on a planet 120 light-years away."
     }
   ];
 
