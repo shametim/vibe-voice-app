@@ -43,9 +43,9 @@ export const App = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-blue-50 font-sans">
+    <div className="min-h-screen bg-green-50 font-sans">
       {/* Header with Navigation */}
-      <header className="bg-blue-800 text-white shadow-md">
+      <header className="bg-green-800 text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold font-franklin-gothic-medium">
             The New York Times
@@ -69,8 +69,8 @@ export const App = () => {
         
         <div className="grid gap-6 md:grid-cols-2">
           {articles.map((article, index) => (
-            <div key={index} className="bg-white border border-blue-200 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
-              <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 hover:underline cursor-pointer">
+            <div key={index} className="bg-white border border-green-200 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-green-600 hover:underline cursor-pointer">
                 {article.title}
               </h2>
               <p className="text-gray-700 font-inter leading-relaxed">
