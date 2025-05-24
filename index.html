@@ -40,13 +40,16 @@
                 // Send GET request to /run with the instruction parameter
                 fetch(`/run?instruction=${encodeURIComponent(transcript)}`, {
                     method: 'GET'
-                }).catch(err => {
+                })
+                .catch(err => {
                     console.error("Failed to send instruction:", err);
+                })
+                .finally(() => {
+                    setTimeout(() => {
+                        location.reload();
+                    }, 1500);
                 });
-
-
             };
-
 
             // Start recognition on the first user click
             const startClickListener = () => {
