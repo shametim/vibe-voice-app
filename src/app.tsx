@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 export const App = () => {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  
+  const [activeTab, setActiveTab] = useState('all');
+
   // Apply dark mode to document
   useEffect(() => {
     if (isDarkMode) {
@@ -16,45 +17,59 @@ export const App = () => {
   const articles = [
     {
       title: "The Climate Crisis Is Accelerating (And Your Grandma’s Garden Is Next!)",
-      summary: "New research shows that global warming is progressing faster than previously predicted, with severe consequences for coastal cities and ecosystems."
+      summary: "New research shows that global warming is progressing faster than previously predicted, with severe consequences for coastal cities and ecosystems.",
+      category: 'world'
     },
     {
       title: "Tech Giants Face New Antitrust Challenges (Spoiler: They’re Still Winning)",
-      summary: "Regulators in the EU and US are intensifying scrutiny of major technology companies, proposing sweeping reforms to competition laws."
+      summary: "Regulators in the EU and US are intensifying scrutiny of major technology companies, proposing sweeping reforms to competition laws.",
+      category: 'news'
     },
     {
       title: "The Future of Remote Work (Who Knew Slack Could Be This Exhausting?)",
-      summary: "As hybrid work models become the norm, companies are rethinking office spaces and employee benefits to maintain productivity and engagement."
+      summary: "As hybrid work models become the norm, companies are rethinking office spaces and employee benefits to maintain productivity and engagement.",
+      category: 'opinion'
     },
     {
       title: "Global Food Prices Reach Record Highs (Your Sandwich Just Got a Raise)",
-      summary: "A combination of climate disasters and supply chain disruptions has pushed food prices to unprecedented levels worldwide."
+      summary: "A combination of climate disasters and supply chain disruptions has pushed food prices to unprecedented levels worldwide.",
+      category: 'news'
     },
     {
       title: "Breakthrough in Quantum Computing (Your Password Is Now Safe... Probably)",
-      summary: "Scientists have developed a new quantum encryption method that could make data breaches a thing of the past."
+      summary: "Scientists have developed a new quantum encryption method that could make data breaches a thing of the past.",
+      category: 'world'
     },
     {
       title: "Global Surge in Renewable Energy Investments (Solar Panels, Here We Come!)",
-      summary: "Countries around the world are pouring billions into solar and wind energy projects to combat climate change."
+      summary: "Countries around the world are pouring billions into solar and wind energy projects to combat climate change.",
+      category: 'world'
     },
     {
       title: "Alien Life Detected on Distant Exoplanet (It’s Probably Just a Rock, Though)",
-      summary: "NASA scientists have confirmed the presence of potential microbial life on a planet 120 light-years away."
+      summary: "NASA scientists have confirmed the presence of potential microbial life on a planet 120 light-years away.",
+      category: 'world'
     },
     {
       title: "Ethics in AI: A Global Conversation (Will My Roomba Start Judging Me?)",
-      summary: "World leaders and tech experts are coming together to establish ethical guidelines for the development and use of artificial intelligence."
+      summary: "World leaders and tech experts are coming together to establish ethical guidelines for the development and use of artificial intelligence.",
+      category: 'opinion'
     },
     {
       title: "Global Health Initiatives Gain Momentum (Finally, Someone Cares About My Cold!)",
-      summary: "New partnerships between governments and NGOs are accelerating progress in combating diseases and improving healthcare access worldwide."
+      summary: "New partnerships between governments and NGOs are accelerating progress in combating diseases and improving healthcare access worldwide.",
+      category: 'news'
     },
     {
       title: "The Rise of Space Tourism (For Rich People Who Hate Gravity)",
-      summary: "With companies like Blue Origin and SpaceX leading the charge, space tourism is becoming a reality for wealthy travelers."
+      summary: "With companies like Blue Origin and SpaceX leading the charge, space tourism is becoming a reality for wealthy travelers.",
+      category: 'world'
     },
   ];
+
+  const filteredArticles = activeTab === 'all'
+    ? articles
+    : articles.filter(article => article.category === activeTab);
 
   return (
     <div className={`min-h-screen bg-green-50 dark:bg-gray-900 font-sans transition-colors duration-300`}>
@@ -66,10 +81,46 @@ export const App = () => {
           </h1>
           <nav>
             <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 relative">
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#" className="hover:underline">News</a></li>
-              <li><a href="#" className="hover:underline">Opinion</a></li>
-              <li><a href="#" className="hover:underline">World</a></li>
+              <li>
+                <button
+                  onClick={() => setActiveTab('all')}
+                  className={`px-4 py-2 rounded-md font-bold transition-colors ${
+                    activeTab === 'all' ? 'bg-white text-green-800' : 'text-white hover:bg-green-700'
+                  }`}
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setActiveTab('news')}
+                  className={`px-4 py-2 rounded-md font-bold transition-colors ${
+                    activeTab === 'news' ? 'bg-white text-green-800' : 'text-white hover:bg-green-700'
+                  }`}
+                >
+                  News
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setActiveTab('opinion')}
+                  className={`px-4 py-2 rounded-md font-bold transition-colors ${
+                    activeTab === 'opinion' ? 'bg-white text-green-800' : 'text-white hover:bg-green-700'
+                  }`}
+                >
+                  Opinion
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setActiveTab('world')}
+                  className={`px-4 py-2 rounded-md font-bold transition-colors ${
+                    activeTab === 'world' ? 'bg-white text-green-800' : 'text-white hover:bg-green-700'
+                  }`}
+                >
+                  World
+                </button>
+              </li>
               <li className="relative">
                 <button 
                   onClick={() => setIsPopoverOpen(!isPopoverOpen)}
@@ -127,7 +178,7 @@ export const App = () => {
         </p>
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article, index) => (
+          {filteredArticles.map((article, index) => (
             <div key={index} className="bg-white dark:bg-gray-700 border border-green-200 dark:border-gray-600 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
               <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-2 hover:text-green-600 hover:underline cursor-pointer">
                 {article.title}
