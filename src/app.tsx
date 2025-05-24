@@ -177,7 +177,35 @@ export const App = () => {
           A simple, elegant layout inspired by the classic New York Times design.
         </p>
         
-        {activeTab === 'news' ? (
+        {activeTab === 'opinion' ? (
+          <div className="space-y-8">
+            {filteredArticles.map((article, index) => (
+              <div 
+                key={index} 
+                className="bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8"
+              >
+                <blockquote className="text-gray-800 dark:text-gray-200 italic text-lg md:text-xl leading-relaxed">
+                  {article.summary}
+                </blockquote>
+                <div className="mt-6 flex items-center">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-xl">
+                      {article.title.charAt(0)}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-gray-800 dark:text-white font-bold">
+                      {article.title.split(' ')[0]}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      {article.title.split(' ')[1]}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : activeTab === 'news' ? (
           <ul className="space-y-4">
             {filteredArticles.map((article, index) => (
               <li 
