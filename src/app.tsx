@@ -31,18 +31,18 @@ export const App = () => {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto bg-gray-50 p-8">
+    <div className="max-w-3xl mx-auto bg-amber-50 p-8">
       <h1 className="text-4xl font-bold font-franklin-gothic-medium text-gray-900 mb-6 text-center">
         The New York Times
       </h1>
-      <p className="text-lg text-gray-700 font-inter leading-relaxed mb-8">
+      <p className="text-lg text-gray-800 font-inter leading-relaxed mb-8">
         A simple, elegant layout inspired by the classic New York Times design.
       </p>
       
       <div className="grid gap-6 md:grid-cols-2">
         {articles.map((article, index) => (
-          <div key={index} className="bg-white border border-gray-200 shadow rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 hover:underline cursor-pointer">
+          <div key={index} className="bg-white border border-amber-200 shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow">
+            <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-red-600 hover:underline cursor-pointer">
               {article.title}
             </h2>
             <p className="text-gray-700 font-inter leading-relaxed">
