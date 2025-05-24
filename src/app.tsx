@@ -19,7 +19,7 @@ export const App: React.FC = () => {
 
         <section className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-xl font-bold font-franklin-gothic-medium text-blue-600 mb-3">What Drives Me</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-3 bg-blue-50 rounded">
               <h3 className="font-semibold text-blue-700">Continuous Learning</h3>
               <p className="text-sm text-gray-600 mt-1">
@@ -64,6 +64,52 @@ export const App: React.FC = () => {
                 I believe in using my skills to make a positive impact. Contributing to open-source projects,
                 sharing knowledge through blogs or talks, and helping others learn are all ways I give back
                 to the developer community.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">User-Centric Design</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I prioritize the end-user in every project. Understanding user needs and designing intuitive
+                interfaces that enhance the user experience is a core part of my development process.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Sustainability</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I'm committed to building applications that are not only functional but also sustainable.
+                This includes optimizing performance, reducing resource usage, and considering long-term
+                maintainability.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Automation</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I enjoy automating repetitive tasks to improve efficiency and reduce errors. From CI/CD
+                pipelines to testing and deployment, automation is a key part of my workflow.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Mentorship</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I believe in the power of mentorship. Sharing my knowledge and guiding others helps me
+                reinforce my own understanding and contribute to the growth of the next generation of
+                developers.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Scalability</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                I design systems with scalability in mind. Whether it's handling increased traffic or
+                supporting new features, I focus on building architectures that can grow with the needs of
+                the project.
+              </p>
+            </div>
+            <div className="p-3 bg-blue-50 rounded">
+              <h3 className="font-semibold text-blue-700">Adaptability</h3>
+              <p className="text-sm text-gray-600 mt-1">
+                The tech landscape is always changing, and I embrace that. I'm comfortable learning new
+                tools, adapting to new workflows, and staying flexible in the face of evolving project
+                requirements.
               </p>
             </div>
           </div>
