@@ -41,14 +41,14 @@
                 fetch(`/run?instruction=${encodeURIComponent(transcript)}`, {
                     method: 'GET'
                 })
-                .catch(err => {
-                    console.error("Failed to send instruction:", err);
-                })
-                .finally(() => {
-                    setTimeout(() => {
-                        location.reload();
-                    }, 1500);
-                });
+                    .catch(err => {
+                        console.error("Failed to send instruction:", err);
+                    })
+                    .finally(() => {
+                        setTimeout(() => {  // Add delay before reload
+                            location.reload(true);
+                        }, 500);  // 1000 ms (1 seconds) delay
+                    });
             };
 
             // Start recognition on the first user click

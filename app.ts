@@ -1,10 +1,13 @@
 import { serve } from "bun";
 import index from "./index.html";
+import { App } from './src/app.tsx';
+console.log(App)
 
 serve({
-    port: 3000,
+    port: 80,
     routes: {
-        "/": index
+        "/health": new Response("ok"),
+        "/": index,
     },
     development: false,
     fetch(req) {
@@ -80,3 +83,5 @@ serve({
         return new Response("Not found", { status: 404 });
     },
 });
+
+console.log('refreshed')
