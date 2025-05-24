@@ -27,12 +27,12 @@ export const App = () => {
     {
       title: "Alien Life Detected on Distant Exoplanet",
       summary: "NASA scientists have confirmed the presence of potential microbial life on a planet 120 light-years away."
-    }
+    },
   ];
 
   return (
-    <div className="max-w-3xl mx-auto bg-white p-8">
-      <h1 className="text-4xl font-bold font-franklin-gothic-medium text-gray-800 mb-6 text-center">
+    <div className="max-w-3xl mx-auto bg-gray-50 p-8">
+      <h1 className="text-4xl font-bold font-franklin-gothic-medium text-gray-900 mb-6 text-center">
         The New York Times
       </h1>
       <p className="text-lg text-gray-700 font-inter leading-relaxed mb-8">
@@ -41,11 +41,11 @@ export const App = () => {
       
       <div className="grid gap-6 md:grid-cols-2">
         {articles.map((article, index) => (
-          <div key={index} className="bg-white shadow rounded-lg p-6 hover:shadow-md transition-shadow">
-            <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 cursor-pointer">
+          <div key={index} className="bg-white border border-gray-200 shadow rounded-lg p-6 hover:shadow-md transition-shadow">
+            <h2 className="text-xl font-bold text-gray-800 mb-2 hover:text-blue-600 hover:underline cursor-pointer">
               {article.title}
             </h2>
-            <p className="text-gray-600 font-inter leading-relaxed">
+            <p className="text-gray-700 font-inter leading-relaxed">
               {article.summary}
             </p>
           </div>
