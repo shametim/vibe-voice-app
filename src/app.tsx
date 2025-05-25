@@ -15,7 +15,7 @@ export const App = () => {
                   <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
-                  <span>123 Kampung Seri, Kuala Lumpur</span>
+                  <span>123 Main Street, Chicago, IL 60601</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ export const App = () => {
               
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-gray-800">Head Chef</h3>
-                <p className="text-gray-600 mb-2">Seri Warisan Restaurant, Kuala Lumpur • 2018 - Present</p>
+                <p className="text-gray-600 mb-2">Seri Warisan Restaurant, Chicago • 2018 - Present</p>
                 <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1">
                   <li>Lead a team of 15+ kitchen staff and manage daily operations of the 100-seat restaurant</li>
                   <li>Developed signature dishes including Ayam Percik, Laksa Lemak, and Char Kway Teow</li>
