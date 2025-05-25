@@ -3,13 +3,46 @@ import '../styles.css';
 export const App = () => {
   return (
     <div className="dark bg-purple-900 min-h-screen text-white p-8">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-franklin font-bold mb-8">
-          Amy <span className="text-purple-400">Dental Student</span>
-        </h1>
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 bg-purple-900 p-4 z-50">
+        <div className="flex gap-4 overflow-x-auto">
+          <a
+            href="#about"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            About
+          </a>
+          <a
+            href="#education"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            Education
+          </a>
+          <a
+            href="#experience"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            Experience
+          </a>
+          <a
+            href="#skills"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            Skills
+          </a>
+          <a
+            href="#contact"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
 
+      {/* Main Content */}
+      <div className="max-w-2xl mx-auto pt-20">
         {/* About Section */}
-        <div className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
+        <div id="about" className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-purple-300 mb-4">
             Dedicated dental student at the University of Michigan with a passion for patient care and oral health education. 
@@ -23,7 +56,7 @@ export const App = () => {
         </div>
 
         {/* Education Section */}
-        <div className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
+        <div id="education" className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
           <h2 className="text-2xl font-bold mb-4">Education</h2>
           <div className="mb-6">
             <div className="flex justify-between">
@@ -37,7 +70,7 @@ export const App = () => {
         </div>
 
         {/* Experience Section */}
-        <div className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
+        <div id="experience" className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
           <h2 className="text-2xl font-bold mb-4">Clinical Experience</h2>
           <div className="mb-6">
             <div className="flex justify-between">
@@ -49,7 +82,7 @@ export const App = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
+        <div id="skills" className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
           <h2 className="text-2xl font-bold mb-4">Skills</h2>
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -72,7 +105,7 @@ export const App = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-purple-800 rounded-lg p-6 border border-purple-700">
+        <div id="contact" className="bg-purple-800 rounded-lg p-6 border border-purple-700">
           <h2 className="text-2xl font-bold mb-4">Connect With Me</h2>
           <div className="flex flex-wrap gap-4">
             <a href="https://linkedin.com" className="text-purple-400 hover:text-purple-300 transition-colors">LinkedIn Profile</a>
