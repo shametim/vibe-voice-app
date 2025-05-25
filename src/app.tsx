@@ -6,7 +6,7 @@ export const App = () => {
   const [browserSupport, setBrowserSupport] = useState<boolean>(true);
 
   useEffect(() => {
-    document.title = "Bachelorette Party Planner | Chicago 2025";
+    document.title = "Party Planner | Chicago 2025";
 
     if ('webkitSpeechRecognition' in window) {
       setBrowserSupport(true);
@@ -64,7 +64,7 @@ export const App = () => {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span className="text-white text-sm font-medium">Hey Amy! Let's plan your Chicago bachelorette – it's going to be a blast! 🎉💃😉</span>
+          <span className="text-white text-sm font-medium">Hey there! Let's plan your Chicago party – it's going to be a blast! 🎉💃😉</span>
         </div>
       </div>
 
@@ -73,9 +73,9 @@ export const App = () => {
         {/* Left Panel - Instructions */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-5 flex flex-col items-center justify-start">
           <div className="text-center">
-            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your Bachelorette Party</h2>
+            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your Party</h2>
             <p className="text-gray-600 text-sm">
-              Speak to update your bachelorette party details. Add guests, activities, and more on the right panel.
+              Speak to update your party details. Add guests, activities, and more on the right panel.
             </p>
           </div>
         </div>
@@ -90,8 +90,8 @@ export const App = () => {
                   AN
                 </div>
                 <div className="mt-4">
-                  <h1 className="text-xl font-bold">Amy Chen</h1>
-                  <p className="text-gray-500 text-sm">Bachelorette Party | April 2025</p>
+                  <h1 className="text-xl font-bold">Your Name</h1>
+                  <p className="text-gray-500 text-sm">Party | April 2025</p>
                   <p className="text-gray-500 text-sm">3 Days, 2 Nights</p>
                 </div>
               </div>
@@ -126,17 +126,14 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Activities</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Ritz-Carlton Spa Chicago</li>
-                <li>Four Seasons Hotel Chicago Spa</li>
-                <li>The Peninsula Chicago Spa</li>
-                <li>Spa at Trump International Hotel & Tower</li>
+                <li>Welcome Reception</li>
+                <li>City Tour & Photo Session</li>
+                <li>Group Dance Party <span className="text-gray-500">at The Chicago Theatre</span></li>
                 <li>Brunch at The Promontory (The Langham)</li>
                 <li>Brunch at The Signature Room on the 95th</li>
                 <li>Brunch at The Rooftop at Trump Tower</li>
                 <li>Brunch at The Riverwalk Rooftop</li>
                 <li>Club Night at The Aragon Ballroom</li>
-                <li>City Tour & Photo Session</li>
-                <li>Group Dance Party <span className="text-gray-500">at The Chicago Theatre</span></li>
               </ul>
             </div>
 
@@ -146,7 +143,7 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Decorations</h2>
               </div>
               <p className="text-gray-600 font-medium text-sm leading-relaxed">
-                Pink and gold balloons, "Bridal Bachelorette" banners, welcome bags with spa treats, and a photo wall with bachelorette-themed props.
+                Pink and gold balloons, "Bridal Party" banners, welcome bags with treats, and a photo wall with themed props.
               </p>
             </div>
 
@@ -188,7 +185,7 @@ export const App = () => {
               </div>
               <div className="mt-2 p-3 border-l-4 border-yellow-500 bg-gray-50">
                 <p className="text-yellow-500 font-medium text-sm">
-                  Pro tip: Include a welcome bag with a spa gift set and a personalized note for each guest.
+                  Pro tip: Include a welcome bag with a gift set and a personalized note for each guest.
                 </p>
               </div>
             </div>
@@ -230,28 +227,6 @@ export const App = () => {
                   Your browser does not support speech recognition.
                 </p>
               )}
-            </div>
-
-            {/* New Card: Finding a New Boyfriend */}
-            <div className="bg-white rounded-xl shadow-sm p-4">
-              <div className="flex justify-between items-center mb-2">
-                <h2 className="text-lg font-bold">Finding a New Boyfriend</h2>
-              </div>
-              <p className="text-gray-600 text-sm mb-2">
-                If your current partner is uncomfortable meeting your family, it might be time to explore new connections. Here are some great ways to find someone who is more open and family-friendly:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Try dating apps like <span className="font-bold">Tinder</span>, <span className="font-bold">Bumble</span>, or <span className="font-bold">Hinge</span> to meet new people who share your values.</li>
-                <li>Join local <span className="font-bold">singles events</span> or <span className="font-bold">group activities</span> (e.g., cooking classes, hiking groups, or book clubs) to meet like-minded individuals.</li>
-                <li>Consider <span className="font-bold">friend-introduced dating</span>—let your friends know you're looking for someone who is family-oriented.</li>
-                <li>Attend <span className="font-bold">family-friendly events</span> or <span className="font-bold">community gatherings</span> where you can naturally introduce a new partner to your loved ones.</li>
-                <li>Focus on <span className="font-bold">self-care and confidence</span>—you deserve someone who is excited to meet your family and be part of your life.</li>
-              </ul>
-              <div className="mt-3 p-3 border-l-4 border-pink-500 bg-gray-50">
-                <p className="text-pink-500 font-medium text-sm">
-                  💡 Tip: Take your time and don’t rush into a new relationship. The right person will appreciate your family and want to be part of your life.
-                </p>
-              </div>
             </div>
           </div>
         </div>
