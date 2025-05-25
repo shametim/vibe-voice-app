@@ -168,7 +168,7 @@ export const App = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-3 rounded">
                   <h3 className="text-gray-700 font-semibold text-sm mb-1">Total Budget</h3>
-                  <p className="text-gray-600 text-sm">$60</p>
+                  <p className="text-gray-600 text-sm">$10</p>
                 </div>
                 <div className="bg-gray-50 p-3 rounded">
                   <h3 className="text-gray-700 font-semibold text-sm mb-1">Spent So Far</h3>
