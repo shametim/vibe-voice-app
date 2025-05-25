@@ -46,7 +46,7 @@ export const App = () => {
             <section>
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hi! I'm Ming Tan, a Malaysian chef with over 12 years in the kitchen. I love whipping up authentic, flavorful dishes and working with awesome teams. I’ve had the chance to work with chefs like Gordon Ramsay and Bobby Flay, and I’m always excited to bring new ideas to the kitchen.
+                Hey there! I'm Ming Tan, a Malaysian chef with over 12 years in the kitchen. I love whipping up authentic, flavorful dishes and working with awesome teams. I’ve had the chance to work with chefs like Gordon Ramsay and Bobby Flay, and I’m always excited to bring new ideas to the kitchen. 🍲
               </p>
             </section>
 
@@ -103,10 +103,10 @@ export const App = () => {
             <section>
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">Notable Collaborations</h2>
               <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
-                <li>Collaborated with Gordon Ramsay on a fusion Malaysian cuisine pop-up event in London (2022)</li>
-                <li>Worked with Bobby Flay on a televised cooking challenge focused on Asian fusion dishes (2021)</li>
-                <li>Contributed to a high-profile culinary workshop with international chefs at the Global Food Summit (2023)</li>
-                <li>Contestant on Iron Chef 2025, winning the competition</li>
+                <li>Collaborated with Gordon Ramsay on a fusion Malaysian cuisine pop-up event in London (2022) 🌍</li>
+                <li>Worked with Bobby Flay on a televised cooking challenge focused on Asian fusion dishes (2021) 🎥</li>
+                <li>Contributed to a high-profile culinary workshop with international chefs at the Global Food Summit (2023) 🤝</li>
+                <li>Contestant on Iron Chef 2025, winning the competition 🏆</li>
               </ul>
             </section>
 
@@ -182,7 +182,7 @@ export const App = () => {
                     type="submit"
                     className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
-                    Sign Up
+                    Join Now
                   </button>
                 </form>
               </div>
