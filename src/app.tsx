@@ -67,6 +67,17 @@ export const App = () => {
 
               <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-800">Executive Chef</h3>
+                <p className="text-gray-600 mb-1">The Spice Garden, Chicago • 2015 - 2018</p>
+                <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
+                  <li>Expanded the menu to include modern interpretations of traditional Malaysian dishes</li>
+                  <li>Trained and mentored 12+ kitchen staff in advanced cooking techniques and food presentation</li>
+                  <li>Improved customer satisfaction by 25% through enhanced service and menu innovation</li>
+                  <li>Implemented new food safety protocols that reduced waste by 20%</li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-gray-800">Executive Chef</h3>
                 <p className="text-gray-600 mb-1">Rasa Nusantara, Penang • 2012 - 2018</p>
                 <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
                   <li>Expanded menu to include regional Malaysian specialties from Sabah and Sarawak</li>
