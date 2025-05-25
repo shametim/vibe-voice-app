@@ -63,7 +63,7 @@ export const App = () => {
             <section className="transition-all duration-300 hover:scale-[1.005]">
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey there! I'm Amy, a Malaysian chef with over 10 years in the kitchen. I absolutely love whipping up tasty meals and collaborating with awesome teams. I've had the chance to work with big names like Gordon Ramsay and Bobby Flay, and I'm always excited to bring fresh ideas to the kitchen. Let's create some amazing dishes together! 🍲✨
+                Hi there! I'm Amy, a Malaysian chef with over 10 years in the kitchen. I love cooking up tasty meals and working with awesome teams. I've had the chance to work with big names like Gordon Ramsay and Bobby Flay, and I'm always excited to bring fresh ideas to the kitchen. Let's cook up something awesome together! 🌮🔥
               </p>
             </section>
 
