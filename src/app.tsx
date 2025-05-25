@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const App = () => {
   useEffect(() => {
-    document.title = 'Hey Amy!';
+    document.title = 'Hey there, Amy! 😊';
   }, []);
 
   return (
