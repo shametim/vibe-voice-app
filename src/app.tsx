@@ -6,7 +6,7 @@ export const App = () => {
   const [activeTab, setActiveTab] = useState<string>('home');
 
   useEffect(() => {
-    document.title = "Amy's Architectural Journey | Aspiring Architect";
+    document.title = "Amy's Architect Journey | Future Architect";
 
     const updateTime = () => {
       const now = new Date();
