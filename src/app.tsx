@@ -46,7 +46,7 @@ export const App = () => {
             <section className="transition-all duration-300 hover:scale-[1.005]">
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey! I'm Ming, a Malaysian chef with over a decade in the kitchen. I love creating authentic, flavor-packed dishes and working with cool teams. I've had the chance to work with some big names like Gordon Ramsay and Bobby Flay, and I'm always stoked to bring fresh ideas to the kitchen. Let's make some amazing food together! 🍲✨
+                Hey! I'm Ming, a Malaysian chef with over 10 years in the kitchen. I love cooking up tasty dishes and working with awesome teams. I've worked with big names like Gordon Ramsay and Bobby Flay, and I'm always excited to bring fresh ideas to the kitchen. Let's make some amazing food together! 🍲✨
               </p>
             </section>
 
