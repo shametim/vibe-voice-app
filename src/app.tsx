@@ -32,6 +32,7 @@ export const App = () => {
             </div>
             <p className="text-gray-300 mt-2">Doctor of Dental Surgery (DDS)</p>
             <p className="text-gray-400 mt-1">GPA: 3.8/4.0 | Dean's List (2022, 2023)</p>
+            <p className="text-gray-400 mt-1">Certified Dental Assistant (CDA) - 2021</p>
           </div>
         </div>
 
