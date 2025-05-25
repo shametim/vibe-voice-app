@@ -6,7 +6,7 @@ export const App = () => {
   const [browserSupport, setBrowserSupport] = useState<boolean>(true);
 
   useEffect(() => {
-    document.title = "Baby Shower Planner | Amy's Baby Shower";
+    document.title = "40th Birthday Party Planner | Amy's 40th Birthday";
 
     if ('webkitSpeechRecognition' in window) {
       setBrowserSupport(true);
@@ -48,7 +48,7 @@ export const App = () => {
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* Party Planner Banner */}
-      <div className="fixed top-0 left-0 right-0 h-10 bg-gradient-to-r from-blue-500 to-pink-500 flex items-center justify-center shadow-md z-50">
+      <div className="fixed top-0 left-0 right-0 h-10 bg-gradient-to-r from-yellow-500 to-green-500 flex items-center justify-center shadow-md z-50">
         <div className="flex items-center space-x-2">
           <svg
             className="w-5 h-5 text-white"
@@ -64,7 +64,7 @@ export const App = () => {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span className="text-white text-sm font-medium">Plan Your Baby Shower</span>
+          <span className="text-white text-sm font-medium">Plan Your 40th Birthday Party</span>
         </div>
       </div>
 
@@ -73,9 +73,9 @@ export const App = () => {
         {/* Left Panel - Instructions */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-5 flex flex-col items-center justify-start">
           <div className="text-center">
-            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your Baby Shower</h2>
+            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your 40th Birthday</h2>
             <p className="text-gray-600 text-sm">
-              Speak to update your baby shower details. Add guests, activities, and more on the right panel.
+              Speak to update your birthday party details. Add guests, activities, and more on the right panel.
             </p>
           </div>
         </div>
@@ -91,7 +91,7 @@ export const App = () => {
                 </div>
                 <div className="mt-4">
                   <h1 className="text-xl font-bold">Amy Nguyen</h1>
-                  <p className="text-gray-500 text-sm">Baby Shower | April 2024</p>
+                  <p className="text-gray-500 text-sm">40th Birthday | April 2024</p>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export const App = () => {
             {/* Party Details Card */}
             <div className="bg-white rounded-xl shadow-sm p-4">
               <div className="flex justify-between items-center mb-2">
-                <h2 className="text-lg font-bold">Shower Details</h2>
+                <h2 className="text-lg font-bold">Party Details</h2>
               </div>
               <p className="font-semibold text-gray-800 text-sm">Date: Saturday, April 20, 2024</p>
               <p className="text-gray-600 text-sm">Time: 2:00 PM - 5:00 PM</p>
@@ -127,10 +127,11 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Activities</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Baby registry gift wrapping</li>
-                <li>Baby name guessing game</li>
-                <li>DIY onesie decorating station</li>
-                <li>Open bar with mocktails</li>
+                <li>40th Birthday Trivia Game</li>
+                <li>Photo Booth with Props</li>
+                <li>Memory Lane Timeline Wall</li>
+                <li>Open Bar with Signature Cocktails</li>
+                <li>Group Dance Party</li>
               </ul>
             </div>
 
@@ -140,7 +141,7 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Decorations</h2>
               </div>
               <p className="text-gray-600 font-medium text-sm leading-relaxed">
-                Pastel balloons, baby-themed centerpieces, custom banners, and a memory wall with baby photos.
+                Balloons with "40" graphics, vintage photo displays, custom banners, and a memory wall with photos from past birthdays.
               </p>
             </div>
 
@@ -150,10 +151,11 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Food & Drinks</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Mini quiches and fruit skewers</li>
-                <li>Signature mocktail station</li>
-                <li>Custom baby-themed cupcakes</li>
-                <li>Soft drinks and wine</li>
+                <li>Mini gourmet sliders and charcuterie boards</li>
+                <li>Signature cocktail station</li>
+                <li>Custom 40th birthday cake</li>
+                <li>Wine tasting bar</li>
+                <li>Soft drinks and mocktails</li>
               </ul>
             </div>
 
@@ -177,11 +179,11 @@ export const App = () => {
             {/* Party Tips Card */}
             <div className="bg-white rounded-xl shadow-sm p-4">
               <div className="flex justify-between items-center mb-2">
-                <h2 className="text-lg font-bold">Shower Tips</h2>
+                <h2 className="text-lg font-bold">Party Tips</h2>
               </div>
               <div className="mt-2 p-3 border-l-4 border-yellow-500 bg-gray-50">
                 <p className="text-yellow-500 font-medium text-sm">
-                  Pro tip: Include a gift registry link for guests to easily shop for baby essentials.
+                  Pro tip: Include a "40 Years of Memories" timeline wall with photos and mementos.
                 </p>
               </div>
             </div>
@@ -210,7 +212,7 @@ export const App = () => {
                       d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
                     ></path>
                   </svg>
-                  {isListening ? 'Listening...' : 'Speak your shower details'}
+                  {isListening ? 'Listening...' : 'Speak your party details'}
                 </div>
               </label>
               {spokenText && (
