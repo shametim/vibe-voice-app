@@ -64,7 +64,7 @@ export const App = () => {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span className="text-white text-sm font-medium">Hey! Let's plan your Chicago bachelorette – it's going to be awesome! 🎉</span>
+          <span className="text-white text-sm font-medium">Hey Amy! Let's plan your Chicago bachelorette – it's going to be super fun! 🎉💃</span>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ export const App = () => {
                   AN
                 </div>
                 <div className="mt-4">
-                  <h1 className="text-xl font-bold">Amy Nguyen</h1>
+                  <h1 className="text-xl font-bold">Amy Chen</h1>
                   <p className="text-gray-500 text-sm">Bachelorette Party | April 2025</p>
                   <p className="text-gray-500 text-sm">3 Days, 2 Nights</p>
                 </div>
