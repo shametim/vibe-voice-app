@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const App = () => {
   useEffect(() => {
-    document.title = "All About Cats | Cat Care, Health & Behavior";
+    document.title = "7-Day Swiss Travel Itinerary | Explore the Alps";
   }, []);
 
   return (
@@ -11,14 +11,14 @@ export const App = () => {
         <header className="mb-8 text-center flex flex-col md:flex-row items-center justify-center">
           <img
             src="https://picsum.photos/200/300"
-            alt="Peter P. I. D. A. M. the Cat"
+            alt="Swiss Alps"
             className="w-16 h-16 rounded-full object-cover mb-4 md:mb-0 md:mr-4"
           />
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
-              Hey there! I'm Peter P. I. D. A. M. 🐾
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
+              Welcome to Switzerland 🇨🇭
             </h1>
-            <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
+            <p className="text-gray-600 font-inter text-lg mt-2">7-Day Travel Itinerary | Alps, Lakes, and Culture</p>
           </div>
         </header>
 
@@ -26,37 +26,55 @@ export const App = () => {
           {/* Main Content Column */}
           <div className="col-span-2">
             <section className="mb-8 border-b pb-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">About This Itinerary</h2>
               <p className="text-gray-600 font-inter leading-relaxed">
-                I'm an adventurous orange tabby with a knack for finding the sunniest spots and the most elusive prey. I'm passionate about exploring back alleys, knocking over objects, and napping in cardboard boxes. My goal is to become the neighborhood's top mouser and to master the art of the perfect purr.
+                This 7-day itinerary takes you through the heart of Switzerland: from the snow-capped Alps to the serene lakes of Geneva and Lucerne. You'll experience Swiss culture, world-class hiking, and unforgettable mountain views.
               </p>
             </section>
 
             <section className="mb-8 border-b pb-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Cat Articles</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">7-Day Itinerary</h2>
               <div className="space-y-6">
                 <article>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    <a href="#cat-care" className="hover:text-orange-500 transition">The Ultimate Guide to Cat Care</a>
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 1: Arrival in Zurich</h3>
                   <p className="text-gray-600 font-inter mt-2">
-                    Learn how to provide the best care for your feline friend, from diet to grooming and playtime.
+                    Arrive in Zurich and explore the Old Town, visit the Grossmünster, and enjoy a lakeside stroll.
                   </p>
                 </article>
                 <article>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    <a href="#cat-health" className="hover:text-orange-500 transition">Common Cat Health Issues</a>
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 2: Zurich to Lucerne</h3>
                   <p className="text-gray-600 font-inter mt-2">
-                    Discover the most common health problems in cats and how to prevent or treat them.
+                    Take a scenic train ride to Lucerne. Visit the Lion Monument and enjoy a boat tour on Lake Lucerne.
                   </p>
                 </article>
                 <article>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    <a href="#cat-behavior" className="hover:text-orange-500 transition">Understanding Cat Behavior</a>
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 3: Mount Pilatus</h3>
                   <p className="text-gray-600 font-inter mt-2">
-                    Decode your cat's body language and learn how to better communicate with your pet.
+                    Hike or take the cable car to the summit of Mount Pilatus for breathtaking alpine views.
+                  </p>
+                </article>
+                <article>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 4: Interlaken</h3>
+                  <p className="text-gray-600 font-inter mt-2">
+                    Stay in Interlaken and explore the Jungfrau region. Go paragliding or take a boat tour on Lake Thun.
+                  </p>
+                </article>
+                <article>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 5: Jungfraujoch – Top of Europe</h3>
+                  <p className="text-gray-600 font-inter mt-2">
+                    Take the Jungfrau Railway to the highest train station in Europe and enjoy panoramic views.
+                  </p>
+                </article>
+                <article>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 6: Geneva</h3>
+                  <p className="text-gray-600 font-inter mt-2">
+                    Visit Geneva's Lake Geneva, the United Nations Office, and the Jet d'Eau fountain.
+                  </p>
+                </article>
+                <article>
+                  <h3 className="text-xl font-semibold text-gray-800">Day 7: Departure</h3>
+                  <p className="text-gray-600 font-inter mt-2">
+                    Depart from Geneva or Zurich with unforgettable memories of the Swiss Alps.
                   </p>
                 </article>
               </div>
@@ -66,31 +84,30 @@ export const App = () => {
           {/* Sidebar Column */}
           <div>
             <section className="mb-8 border-b pb-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Categories</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Top Attractions</h2>
               <ul className="space-y-2">
-                <li><a href="#cat-care" className="text-blue-600 hover:underline">Cat Care</a></li>
-                <li><a href="#cat-health" className="text-blue-600 hover:underline">Cat Health</a></li>
-                <li><a href="#cat-behavior" className="text-blue-600 hover:underline">Cat Behavior</a></li>
-                <li><a href="#cat-breeds" className="text-blue-600 hover:underline">Cat Breeds</a></li>
-                <li><a href="#cat-training" className="text-blue-600 hover:underline">Cat Training</a></li>
+                <li><a href="#lucerne" className="text-blue-600 hover:underline">Lucerne</a></li>
+                <li><a href="#interlaken" className="text-blue-600 hover:underline">Interlaken</a></li>
+                <li><a href="#geneva" className="text-blue-600 hover:underline">Geneva</a></li>
+                <li><a href="#jungfrau" className="text-blue-600 hover:underline">Jungfraujoch</a></li>
               </ul>
             </section>
 
             <section className="mb-8 border-b pb-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Popular Posts</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Local Cuisine</h2>
               <ul className="space-y-2">
-                <li><a href="#cat-care" className="text-blue-600 hover:underline">Top 10 Cat Care Tips</a></li>
-                <li><a href="#cat-health" className="text-blue-600 hover:underline">How to Spot Illness in Cats</a></li>
-                <li><a href="#cat-behavior" className="text-blue-600 hover:underline">Why Cats Knock Things Over</a></li>
+                <li><a href="#fondue" className="text-blue-600 hover:underline">Cheese Fondue</a></li>
+                <li><a href="#raclette" className="text-blue-600 hover:underline">Raclette</a></li>
+                <li><a href="#chocolate" className="text-blue-600 hover:underline">Swiss Chocolate</a></li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">External Resources</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Travel Tips</h2>
               <ul className="space-y-2">
-                <li><a href="https://www.aspca.org" className="text-blue-600 hover:underline" target="_blank">ASPCA</a></li>
-                <li><a href="https://www.catfanciers.com" className="text-blue-600 hover:underline" target="_blank">Cat Fanciers' Association</a></li>
-                <li><a href="https://www.petco.com" className="text-blue-600 hover:underline" target="_blank">Petco</a></li>
+                <li><a href="#transport" className="text-blue-600 hover:underline">Public Transport</a></li>
+                <li><a href="#weather" className="text-blue-600 hover:underline">Weather in Switzerland</a></li>
+                <li><a href="#visa" className="text-blue-600 hover:underline">Visa Requirements</a></li>
               </ul>
             </section>
           </div>
