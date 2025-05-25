@@ -5,7 +5,7 @@ export const App = () => {
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* New Hero Section */}
       <div className="bg-red-600 text-white p-6 md:p-8 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold">Hey there! I'm Amy</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Hey there! I'm Martin</h1>
         <p className="mt-2 text-red-100">
           Malaysian Chef | Holiday Feast Creator | Head Chef at Gordon Ramsay's Restaurant 🎄
         </p>
@@ -25,7 +25,7 @@ export const App = () => {
           {/* Sidebar - Contact Info */}
           <div className="w-full md:w-1/3 bg-green-100 p-5 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-lg">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold text-red-600 drop-shadow-sm mb-2">Amy</h1>
+              <h1 className="text-4xl font-bold text-red-600 drop-shadow-sm mb-2">Martin</h1>
               <p className="text-gray-700 mb-4 italic">Head Chef | Malaysian Cuisine Specialist 🎅</p>
               <div className="space-y-3 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
@@ -63,7 +63,7 @@ export const App = () => {
             <section className="transition-all duration-300 hover:scale-[1.005]">
               <h2 className="text-2xl font-bold text-red-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey there! I'm Amy, a Malaysian chef who loves bringing people together with food—especially during the holidays! 🎄 With over 10 years in the kitchen, I've worked with big names like Gordon Ramsay and Bobby Flay. I'm all about making meals that bring joy and warmth to the table. Let's cook up something awesome together! 🍲🔥
+                Hey there! I'm Martin, a Malaysian chef who loves bringing people together with food—especially during the holidays! 🎄 With over 10 years in the kitchen, I've worked with big names like Gordon Ramsay and Bobby Flay. I'm all about making meals that bring joy and warmth to the table. Let's cook up something awesome together! 🍲🔥
               </p>
             </section>
 
