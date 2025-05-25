@@ -32,16 +32,16 @@
 
                 // Create and show the transcript message
                 const message = document.createElement('div');
-                message.className = 'transcript-message';
+                message.className = 'fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg z-50';
                 message.textContent = transcript;
                 document.body.appendChild(message);
 
                 // Fade out and remove after 1 second
                 setTimeout(() => {
-                    message.classList.add('fade-out');
+                    message.classList.add('opacity-0');
                     setTimeout(() => {
                         message.remove();
-                    }, 500); // Match the CSS transition duration
+                    }, 500);
                 }, 1000);
 
                 // Send GET request to /run with the instruction parameter
@@ -51,9 +51,7 @@
                     .catch(err => {
                         console.error("Failed to send instruction:", err);
                     })
-                    .finally(() => {
-
-                    });
+                    .finally(() => {});
             };
 
             // Start recognition on the first user click

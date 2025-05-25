@@ -43,6 +43,10 @@ export const App = () => {
               <p className="font-semibold">Morning Snack</p>
               <p className="text-gray-600">Chips and Guacamole</p>
             </div>
+            <div className="bg-gray-100 p-4 rounded-lg">
+              <p className="font-semibold">Siblings</p>
+              <p className="text-gray-600">1 sister, Sarah</p>
+            </div>
           </div>
         </section>
 
