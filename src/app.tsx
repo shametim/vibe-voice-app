@@ -78,6 +78,44 @@ export const App = () => {
         </section>
 
         <section className="mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Understanding Tooth Cavities</h2>
+          <div className="bg-gray-700 p-4 rounded-lg">
+            <p className="text-teal-300 font-medium text-base leading-relaxed mb-4">
+              Tooth cavities, or dental caries, are one of the most common oral health issues. They occur when bacteria in the mouth produce acids that erode tooth enamel. While they can be uncomfortable, early detection and proper care can prevent serious complications.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-gray-800 p-4 rounded-lg">
+                <h3 className="text-teal-300 font-semibold text-sm mb-2">Common Causes</h3>
+                <ul className="text-teal-300 text-sm space-y-1">
+                  <li>• Poor oral hygiene</li>
+                  <li>• Frequent sugar consumption</li>
+                  <li>• Dry mouth (low saliva production)</li>
+                  <li>• Acidic foods and drinks</li>
+                </ul>
+              </div>
+              <div className="bg-gray-800 p-4 rounded-lg">
+                <h3 className="text-teal-300 font-semibold text-sm mb-2">Symptoms to Watch For</h3>
+                <ul className="text-teal-300 text-sm space-y-1">
+                  <li>• Tooth sensitivity</li>
+                  <li>• Visible holes or pits in teeth</li>
+                  <li>• Pain when biting or chewing</li>
+                  <li>• Bad breath or a bad taste in the mouth</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4">
+              <h3 className="text-teal-300 font-semibold text-sm mb-2">Prevention Tips</h3>
+              <ul className="text-teal-300 text-sm space-y-1">
+                <li>• Brush twice daily with fluoride toothpaste</li>
+                <li>• Floss daily to remove plaque between teeth</li>
+                <li>• Limit sugary snacks and drinks</li>
+                <li>• Visit your dentist regularly for checkups and cleanings</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Math Involvement</h2>
           <div className="text-center border-2 border-teal-500 rounded-lg p-4 bg-gray-700">
             <p className="text-teal-300 text-sm mb-2">Quadratic formula:</p>
