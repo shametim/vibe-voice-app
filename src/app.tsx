@@ -5,7 +5,7 @@ export const App = () => {
   const [currentTime, setCurrentTime] = useState<string>('');
 
   useEffect(() => {
-    document.title = "Amy's Dental Journey | Future Pediatric Dentist";
+    document.title = "Amy's Dental Adventures 😊 | Aspiring Pediatric Dentist";
 
     const updateTime = () => {
       const now = new Date();
