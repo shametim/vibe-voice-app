@@ -31,6 +31,12 @@ export const App = () => {
             Skills
           </a>
           <a
+            href="#projects"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
+          >
+            Projects
+          </a>
+          <a
             href="#contact"
             className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-600 transition-colors"
           >
@@ -100,6 +106,25 @@ export const App = () => {
                 <li>• Practice management systems</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Projects Section */}
+        <div id="projects" className="bg-purple-800 rounded-lg p-6 mb-8 border border-purple-700">
+          <h2 className="text-2xl font-bold mb-4">Projects</h2>
+          <div className="mb-6">
+            <div className="flex justify-between">
+              <h3 className="font-bold">Dental Patient Education App</h3>
+              <span className="text-purple-400">2023 - 2024</span>
+            </div>
+            <p className="text-purple-300 mt-2">Developed a mobile app to help patients understand dental procedures and maintain oral hygiene through interactive content and reminders.</p>
+          </div>
+          <div className="mb-6">
+            <div className="flex justify-between">
+              <h3 className="font-bold">3D Dental Model Printer</h3>
+              <span className="text-purple-400">2022</span>
+            </div>
+            <p className="text-purple-300 mt-2">Designed and implemented a 3D printing system for creating accurate dental models for educational and clinical use.</p>
           </div>
         </div>
 
