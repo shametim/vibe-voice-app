@@ -10,13 +10,17 @@ export const App = () => {
           Malaysian Chef & Holiday Feast Creator | Head Chef at Gordon Ramsay's Restaurant 🎄
         </p>
         <div className="flex justify-center gap-4 mt-4">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-          </svg>
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -30,7 +34,7 @@ export const App = () => {
           {/* Sidebar - Contact Info */}
           <div className="w-full md:w-1/3 bg-amber-100 p-5 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-lg">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold text-orange-600 drop-shadow-sm mb-2">Amy</h1>
+              <a href="#top" className="text-4xl font-bold text-orange-600 drop-shadow-sm mb-2 block transition-colors duration-200 hover:text-orange-500">Amy</a>
               <p className="text-gray-700 mb-4 italic">Head Chef | Malaysian Cuisine Specialist 🎅</p>
               <div className="space-y-3 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
@@ -202,7 +206,7 @@ export const App = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-orange-600 text-white py-2 px-4 rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-all duration-200 transform hover:scale-105"
+                    className="w-full bg-orange-600 text-white py-2 px-4 rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
                   >
                     Join the Holiday Feast 🎉
                   </button>
