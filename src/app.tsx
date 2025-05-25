@@ -1,4 +1,4 @@
-import '../styles.css';
+import { useState } from "react";
 
 export const App = () => {
   const dentalTerms = [
@@ -10,7 +10,7 @@ export const App = () => {
     { term: "Prosthodontics", definition: "A dental specialty concerned with the restoration and replacement of missing teeth and oral and maxillofacial tissues." },
   ];
 
-  const [searchTerm, setSearchTerm] = React.useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const filteredTerms = dentalTerms.filter(term =>
     term.term.toLowerCase().includes(searchTerm.toLowerCase())
