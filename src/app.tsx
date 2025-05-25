@@ -11,12 +11,12 @@ export const App = () => {
         <header className="mb-8 text-center flex flex-col md:flex-row items-center justify-center">
           <img
             src="https://picsum.photos/200/300"
-            alt="Miguelo the Cat"
+            alt="Peter P. I. D. A. M. the Cat"
             className="w-16 h-16 rounded-full object-cover mb-4 md:mb-0 md:mr-4"
           />
           <div>
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
-              Hey there! I'm Miguelo 🐾
+              Hey there! I'm Peter P. I. D. A. M. 🐾
             </h1>
             <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
           </div>
