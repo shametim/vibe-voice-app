@@ -7,9 +7,11 @@ export const App = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen text-gray-800 p-6">
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
         <header className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900">Orange Whiskers</h1>
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
+            Orange Whiskers
+          </h1>
           <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
         </header>
 
@@ -52,11 +54,11 @@ export const App = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
           <div className="flex flex-wrap gap-2">
             <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Mouse Chasing</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Sunbeam Napping</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Cardboard Box Mastery</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Purr Therapy</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Object Knocking</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Laser Pointer Pursuit</span>
+            <span className="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-amber-200 transition">Sunbeam Napping</span>
+            <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-green-200 transition">Cardboard Box Mastery</span>
+            <span className="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-purple-200 transition">Purr Therapy</span>
+            <span className="bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-red-200 transition">Object Knocking</span>
+            <span className="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-indigo-200 transition">Laser Pointer Pursuit</span>
           </div>
         </section>
 
