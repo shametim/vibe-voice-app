@@ -46,7 +46,7 @@ export const App = () => {
             <section>
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey there! I'm Ming Tan, a Malaysian chef with over 12 years in the kitchen. I love whipping up authentic, flavorful dishes and working with awesome teams. I’ve had the chance to work with chefs like Gordon Ramsay and Bobby Flay, and I’m always excited to bring new ideas to the kitchen. 🍲
+                Hey! I'm Ming Tan, a Malaysian chef with over 12 years in the kitchen. I love whipping up authentic, flavorful dishes and working with awesome teams. I’ve had the chance to work with chefs like Gordon Ramsay and Bobby Flay, and I’m always excited to bring new ideas to the kitchen. 🍲
               </p>
             </section>
 
