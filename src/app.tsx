@@ -8,11 +8,18 @@ export const App = () => {
   return (
     <div className="bg-gray-50 min-h-screen text-gray-800 p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
-        <header className="mb-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
-            Hey there! I'm Miguelo 🐾
-          </h1>
-          <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
+        <header className="mb-8 text-center flex flex-col md:flex-row items-center justify-center">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="Miguelo the Cat"
+            className="w-16 h-16 rounded-full object-cover mb-4 md:mb-0 md:mr-4"
+          />
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
+              Hey there! I'm Miguelo 🐾
+            </h1>
+            <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
+          </div>
         </header>
 
         <section className="mb-8 border-b pb-6">
