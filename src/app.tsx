@@ -42,20 +42,19 @@ export const App = () => {
 
           {/* Main Content */}
           <div className="w-full md:w-2/3 space-y-6">
-            {/* Professional Summary */}
+            {/* About Me */}
             <section>
-              <h2 className="text-2xl font-bold text-pink-600 mb-2">Professional Summary</h2>
+              <h2 className="text-2xl font-bold text-pink-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Passionate Malaysian chef with 12+ years of experience specializing in traditional Nonya, Malay, and Chinese-Peranakan cuisine. 
-                Proven expertise in menu development, kitchen management, and creating authentic dining experiences. 
-                Collaborated with renowned chefs like Gordon Ramsay and Bobby Flay on high-profile culinary projects. 
-                Known for innovative flavor combinations and commitment to preserving traditional cooking techniques.
+                Hey there! I'm Ming Tan, a passionate Malaysian chef with 12+ years of experience in traditional Nonya, Malay, and Chinese-Peranakan cuisine. 
+                I love creating authentic and flavorful dishes while working with amazing teams. 
+                I've had the chance to collaborate with chefs like Gordon Ramsay and Bobby Flay, and I'm always excited to bring new ideas to the kitchen.
               </p>
             </section>
 
-            {/* Experience */}
+            {/* Work Experience */}
             <section>
-              <h2 className="text-2xl font-bold text-pink-600 mb-2">Professional Experience</h2>
+              <h2 className="text-2xl font-bold text-pink-600 mb-2">Work Experience</h2>
               
               <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-800">Head Chef</h3>
