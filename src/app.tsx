@@ -87,6 +87,7 @@ export const App = () => {
                 <li>Collaborated with Gordon Ramsay on a fusion Malaysian cuisine pop-up event in London (2022)</li>
                 <li>Worked with Bobby Flay on a televised cooking challenge focused on Asian fusion dishes (2021)</li>
                 <li>Contributed to a high-profile culinary workshop with international chefs at the Global Food Summit (2023)</li>
+                <li>Contestant on Iron Chef 2025, winning the competition</li>
               </ul>
             </section>
 
