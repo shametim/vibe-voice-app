@@ -218,6 +218,12 @@ export const App = () => {
                   <span className="ml-2">÷ 2a</span>
                 </div>
               </div>
+              {/* New funny addition */}
+              <div className="mt-4 p-4 border-l-4 border-yellow-500 bg-gray-800">
+                <p className="text-yellow-300 font-medium text-sm">
+                  Fun fact: Why did the quadratic equation break up? It found another variable! 😂
+                </p>
+              </div>
             </div>
           </section>
 
