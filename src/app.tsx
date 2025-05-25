@@ -48,6 +48,7 @@ export const App = () => {
               <p className="text-gray-700 leading-relaxed">
                 Passionate Malaysian chef with 12+ years of experience specializing in traditional Nonya, Malay, and Chinese-Peranakan cuisine. 
                 Proven expertise in menu development, kitchen management, and creating authentic dining experiences. 
+                Collaborated with renowned chefs like Gordon Ramsay and Bobby Flay on high-profile culinary projects. 
                 Known for innovative flavor combinations and commitment to preserving traditional cooking techniques.
               </p>
             </section>
@@ -77,6 +78,16 @@ export const App = () => {
                   <li>Managed inventory and reduced food waste by 40% through better forecasting</li>
                 </ul>
               </div>
+            </section>
+
+            {/* Collaborations */}
+            <section>
+              <h2 className="text-2xl font-bold text-pink-600 mb-2">Notable Collaborations</h2>
+              <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
+                <li>Collaborated with Gordon Ramsay on a fusion Malaysian cuisine pop-up event in London (2022)</li>
+                <li>Worked with Bobby Flay on a televised cooking challenge focused on Asian fusion dishes (2021)</li>
+                <li>Contributed to a high-profile culinary workshop with international chefs at the Global Food Summit (2023)</li>
+              </ul>
             </section>
 
             {/* Skills */}
