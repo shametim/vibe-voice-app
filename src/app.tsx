@@ -156,11 +156,11 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Food & Drinks</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Brunch with mimosas and pastries</li>
-                <li>Spa snacks and herbal tea</li>
-                <li>Open bar at the club</li>
-                <li>Custom bachelorette cupcakes</li>
-                <li>Soft drinks and mocktails</li>
+                <li><span className="font-bold">Korean Garden</span> (Lincoln Park) – Great for solo dining with a wide selection of Korean dishes and a friendly, quiet atmosphere.</li>
+                <li><span className="font-bold">Bibigo Korean Restaurant</span> (River North) – Offers a variety of Korean comfort food in a modern setting, perfect for a quick solo lunch.</li>
+                <li><span className="font-bold">Jinju Korean BBQ</span> (West Loop) – Enjoy a fun and interactive dining experience with Korean BBQ, great for solo diners who want to cook their own food.</li>
+                <li><span className="font-bold">Mama Kim's Korean Restaurant</span> (Logan Square) – A cozy spot with traditional Korean dishes and a welcoming vibe for solo meals.</li>
+                <li><span className="font-bold">Ssang Gwangja Korean Restaurant</span> (Near O'Hare) – Known for its generous portions and authentic flavors, ideal for a satisfying solo meal.</li>
               </ul>
             </div>
 
