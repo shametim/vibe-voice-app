@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const App = () => {
   useEffect(() => {
-    document.title = "Dental Student Resume | Pediatric Dentistry";
+    document.title = "Amy's Dental Journey | Future Pediatric Dentist";
   }, []);
 
   return (
@@ -10,10 +10,10 @@ export const App = () => {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
-            Amy Chang
+            Hi, I'm Amy! 😊
           </h1>
-          <p className="text-gray-600 font-inter text-lg mt-2">Dental Student | University of Michigan</p>
-          <p className="text-gray-500 text-sm mt-1">Graduation: 2025 | Pediatric Dentistry Specialization</p>
+          <p className="text-gray-600 font-inter text-lg mt-2">Future Pediatric Dentist | Class of '25</p>
+          <p className="text-gray-500 text-sm mt-1">University of Michigan</p>
         </header>
 
         <section className="mb-8">
