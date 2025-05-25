@@ -1,50 +1,71 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export const App = () => {
-  const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>([]);
-
-  const handleVoiceCommand = () => {
-    const userMessage = { text: 'User spoke', isUser: true };
-    setMessages([...messages, userMessage]);
-
-    // Simulate app response
-    setTimeout(() => {
-      const appMessage = { text: 'App responded', isUser: false };
-      setMessages((prev) => [...prev, appMessage]);
-    }, 500);
-  };
-
   return (
-    <div className="bg-blue-50 min-h-screen text-gray-800 p-6">
+    <div className="bg-gray-50 min-h-screen text-gray-800 p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-        <header className="mb-6 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Chat with{' '}
-            <span className="font-franklin-gothic-medium">Vibe Voice</span>
-          </h1>
-          <p className="text-gray-600 font-inter text-sm mt-1">Click to speak</p>
-          <button
-            onClick={handleVoiceCommand}
-            className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition shadow-md"
-          >
-            Click to speak now
-          </button>
+        <header className="mb-8 text-center">
+          <h1 className="text-4xl font-bold text-gray-900">John Doe</h1>
+          <p className="text-gray-600 font-inter text-lg mt-2">Software Engineer | Full Stack Developer</p>
         </header>
 
-        <div className="h-96 overflow-y-auto mb-6 border border-gray-200 rounded-lg p-4 space-y-4">
-          {messages.map((msg, index) => (
-            <div
-              key={index}
-              className={`p-3 rounded-lg max-w-xs sm:max-w-md ${
-                msg.isUser
-                  ? 'bg-blue-100 ml-auto text-right'
-                  : 'bg-gray-100 text-left'
-              }`}
-            >
-              <p className="text-sm">{msg.text}</p>
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
+          <p className="text-gray-600 font-inter leading-relaxed">
+            I'm a passionate software engineer with 5+ years of experience building scalable web applications and APIs. 
+            I specialize in full-stack development using modern frameworks like React, Node.js, and TypeScript.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Experience</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Senior Software Engineer</h3>
+              <p className="text-gray-500 font-inter">Tech Corp | Jan 2020 – Present</p>
+              <p className="text-gray-600 font-inter mt-2">
+                Led the development of a high-traffic SaaS platform using React and Node.js. Improved performance by 40% and reduced server costs by 25%.
+              </p>
             </div>
-          ))}
-        </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Software Engineer</h3>
+              <p className="text-gray-500 font-inter">InnovateX | Jun 2017 – Dec 2019</p>
+              <p className="text-gray-600 font-inter mt-2">
+                Built and maintained internal tools and APIs for a growing team of 50+ developers. Focused on backend architecture and CI/CD pipelines.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Education</h2>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
+            <p className="text-gray-500 font-inter">University of Tech | 2013 – 2017</p>
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
+          <div className="flex flex-wrap gap-2">
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">TypeScript</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">AWS</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact</h2>
+          <p className="text-gray-600 font-inter">
+            Email: <a href="mailto:john.doe@example.com" className="text-blue-600 hover:underline">john.doe@example.com</a>
+          </p>
+          <p className="text-gray-600 font-inter mt-2">
+            LinkedIn: <a href="https://linkedin.com/in/johndoe" className="text-blue-600 hover:underline">linkedin.com/in/johndoe</a>
+          </p>
+        </section>
       </div>
     </div>
   );
