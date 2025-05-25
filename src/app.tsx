@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 
 export const App = () => {
-  const [cvFile, setCvFile] = useState<string | null>(null);
-  const [currentTime, setCurrentTime] = useState<string>('');
   const [spokenText, setSpokenText] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
   const [browserSupport, setBrowserSupport] = useState<boolean>(true);
@@ -10,17 +8,6 @@ export const App = () => {
   useEffect(() => {
     document.title = "Amy's Architect Journey | Future Architect";
 
-    const updateTime = () => {
-      const now = new Date();
-      setCurrentTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
-    };
-
-    updateTime();
-    const interval = setInterval(updateTime, 60000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     if ('webkitSpeechRecognition' in window) {
       setBrowserSupport(true);
     } else {
@@ -60,16 +47,29 @@ export const App = () => {
 
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans">
-      {/* Status Bar */}
-      <div className="fixed top-0 left-0 right-0 h-10 bg-gray-100 flex items-center px-4 z-50">
+      {/* Vibe Voice App Banner */}
+      <div className="fixed top-0 left-0 right-0 h-12 bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center shadow-md z-50">
         <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 rounded-full bg-gray-300"></div>
-          <div className="text-gray-600 text-sm">{currentTime}</div>
+          <svg
+            className="w-5 h-5 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+            ></path>
+          </svg>
+          <span className="text-white font-medium">Vibe Voice App</span>
         </div>
       </div>
 
       {/* Two-Panel Layout */}
-      <div className="pt-16 px-4 pb-20 flex flex-1 h-full">
+      <div className="pt-12 px-4 pb-20 flex flex-1 h-full">
         {/* Left Panel - Static Message */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center justify-start">
           <div className="text-center">
