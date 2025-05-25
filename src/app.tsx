@@ -5,7 +5,7 @@ export const App = () => {
   return (
     <div className="dark bg-purple-950 min-h-screen text-white p-8">
       {/* Navigation Bar */}
-
+      hi
     </div>
   );
 };
