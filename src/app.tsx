@@ -123,7 +123,7 @@ export const App = () => {
                 <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
                   <div className="py-2">Hostel One Zurich</div>
                   <div className="py-2">Zurich</div>
-                  <div className="py-2">CHF 80</div>
+                  <div className="py-2">CHF 90</div>
                   <div className="py-2">4.2 ⭐</div>
                 </div>
                 <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
@@ -135,13 +135,13 @@ export const App = () => {
                 <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
                   <div className="py-2">Hotel Adler Geneva</div>
                   <div className="py-2">Geneva</div>
-                  <div className="py-2">CHF 100</div>
+                  <div className="py-2">CHF 90</div>
                   <div className="py-2">4.3 ⭐</div>
                 </div>
                 <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
                   <div className="py-2">Hotel Krone Interlaken</div>
                   <div className="py-2">Interlaken</div>
-                  <div className="py-2">CHF 110</div>
+                  <div className="py-2">CHF 100</div>
                   <div className="py-2">4.1 ⭐</div>
                 </div>
                 <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
