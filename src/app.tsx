@@ -1,10 +1,14 @@
-export const App = () => {
+import React, { useEffect } from 'react';
 
+export const App = () => {
+  useEffect(() => {
+    document.title = 'Welcome to My App';
+  }, []);
 
   return (
     <div className="dark bg-purple-950 min-h-screen text-white p-8">
       {/* Navigation Bar */}
-      <div className="text-3xl font-franklin-gothic-medium">Hi</div>
+      <h1 className="text-5xl font-franklin-gothic-medium mb-8">Hi</h1>
     </div>
   );
 };
