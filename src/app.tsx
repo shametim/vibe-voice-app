@@ -1,6 +1,21 @@
 import '../styles.css';
 
 export const App = () => {
+  const dentalTerms = [
+    { term: "Caries", definition: "A decayed area on the tooth surface that commonly occurs due to acid production by bacteria." },
+    { term: "Periodontal Disease", definition: "A chronic inflammatory disease that affects the gums and supporting structures of the teeth." },
+    { term: "Implant", definition: "A surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis." },
+    { term: "Endodontics", definition: "A branch of dentistry dealing with the morphology, physiology, and pathology of the human dental pulp and periradicular tissues." },
+    { term: "Orthodontics", definition: "A specialty of dentistry that focuses on the diagnosis, prevention, and correction of malpositioned teeth and jaws." },
+    { term: "Prosthodontics", definition: "A dental specialty concerned with the restoration and replacement of missing teeth and oral and maxillofacial tissues." },
+  ];
+
+  const [searchTerm, setSearchTerm] = React.useState('');
+
+  const filteredTerms = dentalTerms.filter(term =>
+    term.term.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="dark bg-purple-950 min-h-screen text-white p-8">
       {/* Navigation Bar */}
@@ -41,6 +56,12 @@ export const App = () => {
             className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Contact
+          </a>
+          <a
+            href="#glossary"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
+          >
+            Glossary
           </a>
         </div>
       </nav>
@@ -143,6 +164,32 @@ export const App = () => {
           <div className="flex flex-wrap gap-4">
             <a href="https://linkedin.com" className="text-purple-300 hover:text-purple-200 transition-colors underline">LinkedIn Profile</a>
             <a href="mailto:amy@example.com" className="text-purple-300 hover:text-purple-200 transition-colors underline">Email Me</a>
+          </div>
+        </div>
+
+        {/* Glossary (Webster) Section */}
+        <div id="glossary" className="bg-purple-900 rounded-lg p-6 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
+          <h2 className="text-2xl font-bold mb-4">Dental Glossary</h2>
+          <div className="mb-4">
+            <input
+              type="text"
+              placeholder="Search terms..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full p-2 bg-purple-800 text-white rounded border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+          </div>
+          <div className="space-y-4">
+            {filteredTerms.length > 0 ? (
+              filteredTerms.map((term, index) => (
+                <div key={index} className="bg-purple-800 p-4 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold text-purple-200">{term.term}</h3>
+                  <p className="text-purple-300 mt-1">{term.definition}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-purple-300">No terms found.</p>
+            )}
           </div>
         </div>
       </div>
