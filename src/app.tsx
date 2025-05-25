@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 export const App = () => {
   const [cvFile, setCvFile] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState<string>('');
+  const [spokenText, setSpokenText] = useState<string>('');
+  const [isListening, setIsListening] = useState<boolean>(false);
+  const [browserSupport, setBrowserSupport] = useState<boolean>(true);
 
   useEffect(() => {
     document.title = "Amy's Architect Journey | Future Architect";
@@ -17,11 +20,42 @@ export const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      setCvFile(file.name);
+  useEffect(() => {
+    if ('webkitSpeechRecognition' in window) {
+      setBrowserSupport(true);
+    } else {
+      setBrowserSupport(false);
     }
+  }, []);
+
+  const startListening = () => {
+    if (!browserSupport) return;
+
+    const recognition = new (window as any).webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-US';
+
+    recognition.onstart = () => {
+      setIsListening(true);
+    };
+
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setSpokenText(transcript);
+      setIsListening(false);
+    };
+
+    recognition.onerror = (event: any) => {
+      console.error('Speech recognition error:', event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
   };
 
   return (
@@ -46,7 +80,7 @@ export const App = () => {
           <div className="text-center">
             <h2 className="text-pink-500 font-bold text-lg mb-2">Change Your Resume</h2>
             <p className="text-gray-600 text-sm">
-              Speak to update your resume. Upload your latest version on the right panel.
+              Speak to update your resume. Update your background by voice on the right panel.
             </p>
           </div>
         </div>
@@ -106,23 +140,35 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Interests</h2>
               </div>
               <label htmlFor="cv-upload" className="cursor-pointer">
-                <div className="flex items-center text-gray-600 font-medium text-sm">
-                  <svg className="w-5 h-5 text-pink-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                <div
+                  className="flex items-center text-gray-600 font-medium text-sm"
+                  onClick={startListening}
+                >
+                  <svg
+                    className="w-5 h-5 text-pink-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                    ></path>
                   </svg>
-                  Upload CV (PDF)
+                  {isListening ? 'Listening...' : 'Speak your background'}
                 </div>
               </label>
-              <input
-                id="cv-upload"
-                type="file"
-                accept=".pdf"
-                onChange={handleFileChange}
-                className="hidden"
-              />
-              {cvFile && (
+              {spokenText && (
                 <p className="text-gray-600 text-sm mt-2">
-                  Selected: <span className="font-medium">{cvFile}</span>
+                  <span className="font-medium">You said:</span> {spokenText}
+                </p>
+              )}
+              {!browserSupport && (
+                <p className="text-red-500 text-sm mt-2">
+                  Your browser does not support speech recognition.
                 </p>
               )}
             </div>
