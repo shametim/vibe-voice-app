@@ -8,7 +8,7 @@ export const App = () => {
           {/* Sidebar - Contact Info */}
           <div className="w-full md:w-1/3 bg-gray-100 p-5 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-lg">
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold text-indigo-600 drop-shadow-sm mb-2">Ming Tan</h1>
+              <h1 className="text-4xl font-bold text-indigo-600 drop-shadow-sm mb-2">Martin</h1>
               <p className="text-gray-700 mb-4 italic">Head Chef | Malaysian Cuisine Specialist</p>
               <div className="space-y-3 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
@@ -46,7 +46,7 @@ export const App = () => {
             <section className="transition-all duration-300 hover:scale-[1.005]">
               <h2 className="text-2xl font-bold text-indigo-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey! I'm Ming, a Malaysian chef with over 10 years in the kitchen. I love cooking up delicious dishes and working with cool teams. I've worked with big names like Gordon Ramsay and Bobby Flay, and I'm always excited to bring fresh ideas to the kitchen. Let's cook up some cool meals together! 🍲✨
+                Hey! I'm Martin, a Malaysian chef with over 10 years in the kitchen. I love cooking up delicious dishes and working with cool teams. I've worked with big names like Gordon Ramsay and Bobby Flay, and I'm always excited to bring fresh ideas to the kitchen. Let's cook up some cool meals together! 🍲✨
               </p>
             </section>
 
