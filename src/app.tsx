@@ -6,10 +6,10 @@ export const App = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-violet-500 min-h-screen text-white p-6">
-      <div className="max-w-lg mx-auto bg-gradient-to-r from-red-500 via-yellow-500 to-violet-500 rounded-xl shadow-lg p-6">
+    <div className="bg-red-900 min-h-screen text-white p-6">
+      <div className="max-w-lg mx-auto bg-red-800 rounded-xl shadow-lg p-6">
         <header className="mb-8 text-center">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-violet-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold text-white">
             Hi, I'm Amy! 😊
           </h1>
           <p className="text-yellow-200 font-inter text-lg mt-2">Future Pediatric Dentist | Class of '25</p>
@@ -18,7 +18,7 @@ export const App = () => {
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Education</h2>
-          <div className="bg-gradient-to-r from-red-600 via-yellow-600 to-violet-600 p-4 rounded-lg">
+          <div className="bg-red-700 p-4 rounded-lg">
             <p className="font-semibold text-white text-lg">University of Michigan School of Dentistry</p>
             <p className="text-yellow-200 text-base">DMD Candidate, Class of 2025</p>
             <p className="text-purple-200 text-sm mt-1">Specializing in Pediatric Dentistry</p>
