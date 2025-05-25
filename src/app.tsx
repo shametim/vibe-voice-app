@@ -10,7 +10,7 @@ export const App = () => {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
-            Jane Doe
+            Amy Chang
           </h1>
           <p className="text-gray-600 font-inter text-lg mt-2">Dental Student | University of Michigan</p>
           <p className="text-gray-500 text-sm mt-1">Graduation: 2025 | Pediatric Dentistry Specialization</p>
