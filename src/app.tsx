@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export const App = () => {
+  useEffect(() => {
+    document.title = 'Hey Amy!';
+  }, []);
+
   return (
     <div className="bg-gray-50 min-h-screen text-gray-800 p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
