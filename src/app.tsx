@@ -38,13 +38,13 @@ export const App = () => {
                 <article>
                   <h3 className="text-xl font-semibold text-gray-800">Day 1: Arrival in Zurich</h3>
                   <p className="text-gray-600 font-inter mt-2">
-                    Arrive in Zurich and explore the Old Town, visit the Grossmünster, and enjoy a lakeside stroll.
+                    Arrive in Zurich and start your journey in the charming Old Town (Altstadt), where you'll find narrow cobblestone streets, colorful buildings, and historic landmarks like the Grossmünster and the iconic Zurich Cathedral. Take a relaxing stroll along the River Promenade (Lindenhof) and enjoy views of the Limmat River and the city skyline. In the evening, head to the Lake Zurich shoreline for a peaceful sunset or dine at a lakeside restaurant like the famous Limmatquai for a traditional Swiss meal.
                   </p>
                 </article>
                 <article>
                   <h3 className="text-xl font-semibold text-gray-800">Day 2: Zurich to Lucerne</h3>
                   <p className="text-gray-600 font-inter mt-2">
-                    Take a scenic train ride to Lucerne. Visit the Lion Monument and enjoy a boat tour on Lake Lucerne.
+                    Take a scenic train ride from Zurich to Lucerne, passing through picturesque Swiss countryside and mountain vistas. Upon arrival, visit the Lion Monument (Löwendenkmal), a moving tribute to the fallen French soldiers of the 1792 siege of Lucerne. Explore the Chapel Bridge (Kapellbrücke), one of the oldest covered bridges in Europe, and enjoy panoramic views of the Reuss River. In the afternoon, take a boat tour on Lake Lucerne or hike up to Mount Pilatus for breathtaking alpine views. End your day with a cozy fondue dinner in a traditional Swiss chalet.
                   </p>
                 </article>
                 <article>
