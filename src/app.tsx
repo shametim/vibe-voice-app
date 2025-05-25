@@ -102,13 +102,61 @@ export const App = () => {
               </ul>
             </section>
 
-            <section>
+            <section className="mb-8 border-b pb-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Travel Tips</h2>
               <ul className="space-y-2">
                 <li><a href="#transport" className="text-blue-600 hover:underline">Public Transport</a></li>
                 <li><a href="#weather" className="text-blue-600 hover:underline">Weather in Switzerland</a></li>
                 <li><a href="#visa" className="text-blue-600 hover:underline">Visa Requirements</a></li>
               </ul>
+            </section>
+
+            <section className="mb-8 border-b pb-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Budget Hotels</h2>
+              <div className="overflow-x-auto">
+                <div className="grid grid-cols-4 gap-2 text-left px-2">
+                  <div className="font-bold uppercase">Hotel</div>
+                  <div className="font-bold uppercase">Location</div>
+                  <div className="font-bold uppercase">Price/night</div>
+                  <div className="font-bold uppercase">Rating</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Hostel One Zurich</div>
+                  <div className="py-2">Zurich</div>
+                  <div className="py-2">CHF 80</div>
+                  <div className="py-2">4.2 ⭐</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Ibis Budget Lucerne</div>
+                  <div className="py-2">Lucerne</div>
+                  <div className="py-2">CHF 95</div>
+                  <div className="py-2">4.0 ⭐</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Hotel Adler Geneva</div>
+                  <div className="py-2">Geneva</div>
+                  <div className="py-2">CHF 100</div>
+                  <div className="py-2">4.3 ⭐</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Hotel Krone Interlaken</div>
+                  <div className="py-2">Interlaken</div>
+                  <div className="py-2">CHF 110</div>
+                  <div className="py-2">4.1 ⭐</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Hotel des Alpes</div>
+                  <div className="py-2">Geneva</div>
+                  <div className="py-2">CHF 90</div>
+                  <div className="py-2">4.4 ⭐</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-left px-2 border-t border-gray-200">
+                  <div className="py-2">Ibis Budget Zurich</div>
+                  <div className="py-2">Zurich</div>
+                  <div className="py-2">CHF 85</div>
+                  <div className="py-2">4.0 ⭐</div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
