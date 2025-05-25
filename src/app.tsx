@@ -45,7 +45,7 @@ export const App = () => {
             </div>
             <div className="bg-gray-100 p-4 rounded-lg">
               <p className="font-semibold">Siblings</p>
-              <p className="text-gray-600">1 sister, Sarah</p>
+              <p className="text-gray-600">1 sister, Sarah. We fight a lot but love each other deeply.</p>
             </div>
           </div>
         </section>
