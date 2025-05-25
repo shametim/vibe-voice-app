@@ -4,7 +4,7 @@ export const App = () => {
   return (
     <div className="dark bg-purple-950 min-h-screen text-white p-8">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 bg-purple-900 p-4 z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-purple-900 p-4 z-50 shadow-md">
         <div className="flex gap-4 overflow-x-auto">
           <a
             href="#about"
@@ -46,9 +46,9 @@ export const App = () => {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-2xl mx-auto pt-20">
+      <div className="max-w-2xl mx-auto pt-20 space-y-8">
         {/* About Section */}
-        <div id="about" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800">
+        <div id="about" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-purple-200 mb-4">
             👋 Hey there, I'm a dental student at the University of Michigan who's super passionate about patient care and helping people love their smiles. I'm always looking for ways to grow and apply what I've learned in real-world settings.
@@ -61,10 +61,10 @@ export const App = () => {
         </div>
 
         {/* Education Section */}
-        <div id="education" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800">
+        <div id="education" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">Education</h2>
           <div className="mb-6">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <h3 className="text-xl font-bold">University of Michigan School of Dentistry</h3>
               <span className="text-purple-300">2022 - 2026</span>
             </div>
@@ -75,10 +75,10 @@ export const App = () => {
         </div>
 
         {/* Experience Section */}
-        <div id="experience" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800">
+        <div id="experience" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">Clinical Experience</h2>
           <div className="mb-6">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <h3 className="font-bold">General Dental Assistant</h3>
               <span className="text-purple-300">2021 - 2022</span>
             </div>
@@ -87,7 +87,7 @@ export const App = () => {
         </div>
 
         {/* Skills Section */}
-        <div id="skills" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800">
+        <div id="skills" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">Skills</h2>
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -110,17 +110,17 @@ export const App = () => {
         </div>
 
         {/* Projects Section */}
-        <div id="projects" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800">
+        <div id="projects" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">Projects</h2>
-          <div className="mb-6">
-            <div className="flex justify-between">
+          <div className="mb-6 border-b border-purple-800 pb-4">
+            <div className="flex justify-between items-center">
               <h3 className="font-bold">Dental Patient Education App</h3>
               <span className="text-purple-300">2023 - 2024</span>
             </div>
             <p className="text-purple-200 mt-2">Developed a mobile app to help patients understand dental procedures and maintain oral hygiene through interactive content and reminders.</p>
           </div>
           <div className="mb-6">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <h3 className="font-bold">3D Dental Model Printer</h3>
               <span className="text-purple-300">2022</span>
             </div>
@@ -129,11 +129,11 @@ export const App = () => {
         </div>
 
         {/* Contact Section */}
-        <div id="contact" className="bg-purple-900 rounded-lg p-6 border border-purple-800">
+        <div id="contact" className="bg-purple-900 rounded-lg p-6 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">Connect With Me</h2>
           <div className="flex flex-wrap gap-4">
-            <a href="https://linkedin.com" className="text-purple-300 hover:text-purple-200 transition-colors">LinkedIn Profile</a>
-            <a href="mailto:amy@example.com" className="text-purple-300 hover:text-purple-200 transition-colors">Email Me</a>
+            <a href="https://linkedin.com" className="text-purple-300 hover:text-purple-200 transition-colors underline">LinkedIn Profile</a>
+            <a href="mailto:amy@example.com" className="text-purple-300 hover:text-purple-200 transition-colors underline">Email Me</a>
           </div>
         </div>
       </div>
