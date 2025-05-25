@@ -103,7 +103,7 @@ export const App = () => {
               </div>
               <p className="font-semibold text-gray-800 text-sm">Date: Saturday, April 20, 2024</p>
               <p className="text-gray-600 text-sm">Time: 2:00 PM - 5:00 PM</p>
-              <p className="text-gray-500 text-sm mt-1">Venue: The Garden Room, Ann Arbor</p>
+              <p className="text-gray-500 text-sm mt-1">Venue: Tea House in Carytown, Ann Arbor</p>
             </div>
 
             {/* Guest List Card */}
