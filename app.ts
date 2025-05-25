@@ -1,7 +1,5 @@
 import { serve } from "bun";
 import index from "./index.html";
-import { App } from './src/app.tsx';
-console.log(App)
 
 serve({
     port: 80,
@@ -9,7 +7,7 @@ serve({
         "/health": new Response("ok"),
         "/": index,
     },
-    development: false,
+    development: true,
     fetch(req) {
         const url = new URL(req.url);
 
