@@ -5,7 +5,7 @@ export const App = () => {
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* New Hero Section */}
       <div className="bg-orange-600 text-white p-6 md:p-8 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold">Hi! I'm Amy</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Hey there! I'm Amy</h1>
         <p className="mt-2 text-orange-100">
           Malaysian Chef | Holiday Feast Creator | Head Chef at Gordon Ramsay's Restaurant 🎄
         </p>
