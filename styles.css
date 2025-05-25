@@ -5,6 +5,7 @@
 /* Define custom font */
 html {
   --font-franklin: 'Franklin Gothic Medium', sans-serif;
+  scroll-behavior: smooth;
 }
 
 @tailwind components;
