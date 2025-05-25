@@ -6,7 +6,7 @@ export const App = () => {
       <div className="max-w-2xl mx-auto">
         {/* Header Section */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2 font-franklin-gothic-medium">John Doe</h1>
+          <h1 className="text-4xl font-bold mb-2 font-franklin-gothic-medium tracking-wide">John Doe</h1>
           <p className="text-gray-400 text-lg">Software Engineer | Web Developer</p>
           <div className="mt-4 flex flex-wrap gap-4 text-sm text-gray-300">
             <span>john.doe@example.com</span>
@@ -20,7 +20,7 @@ export const App = () => {
         {/* Experience Section */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Experience</h2>
-          <div className="bg-gray-800 p-4 rounded-lg mb-4">
+          <div className="bg-gray-800 p-4 rounded-lg mb-4 border border-gray-700 shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="flex justify-between mb-1">
               <h3 className="font-medium">Senior Software Engineer</h3>
               <span className="text-sm text-gray-400">2020 - Present</span>
@@ -37,7 +37,7 @@ export const App = () => {
         {/* Education Section */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Education</h2>
-          <div className="bg-gray-800 p-4 rounded-lg mb-4">
+          <div className="bg-gray-800 p-4 rounded-lg mb-4 border border-gray-700 shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="flex justify-between mb-1">
               <h3 className="font-medium">BS Computer Science</h3>
               <span className="text-sm text-gray-400">2016 - 2020</span>
@@ -53,7 +53,7 @@ export const App = () => {
             {['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Python', 'AWS'].map((skill) => (
               <span 
                 key={skill} 
-                className="bg-gray-800 px-3 py-1 rounded-full text-sm"
+                className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
               >
                 {skill}
               </span>
