@@ -4,6 +4,9 @@ export const App = () => {
   return (
     <div className="dark bg-gray-900 min-h-screen text-white p-8">
       <div className="max-w-2xl mx-auto">
+        <h1 className="text-4xl font-franklin font-bold mb-8">
+          Hey there! What's up?
+        </h1>
       </div>
     </div>
   );

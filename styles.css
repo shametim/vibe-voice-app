@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Franklin+Gothic+Medium&display=swap');
 
 @tailwind base;
+
+/* Define custom font */
+html {
+  --font-franklin: 'Franklin Gothic Medium', sans-serif;
+}
+
 @tailwind components;
 @tailwind utilities;
