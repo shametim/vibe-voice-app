@@ -20,6 +20,11 @@ export const App = () => {
         </div>
       </div>
 
+      {/* Vibe Voice App Title */}
+      <div className="text-center mt-8 mb-4">
+        <h1 className="text-4xl font-bold text-gray-900">Vibe Voice App</h1>
+      </div>
+
       <div className="max-w-4xl mx-auto p-6 md:p-8">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Sidebar - Contact Info */}
