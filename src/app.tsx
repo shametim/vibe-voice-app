@@ -1,10 +1,9 @@
-
 export const App = () => {
   return (
     <div className="bg-purple-50 min-h-screen text-gray-900 font-sans">
       {/* New Hero Section */}
       <div className="bg-purple-600 text-white p-4 md:p-6 text-center">
-        <h1 className="text-2xl md:text-3xl font-bold">Hiya! I'm Amy</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">Hiya! I'm Martin</h1>
         <p className="mt-1 text-purple-100 text-sm">
           Malaysian Chef & Holiday Feast Creator | Head Chef at Gordon Ramsay's Restaurant 🎄
         </p>
@@ -33,7 +32,7 @@ export const App = () => {
           {/* Sidebar - Contact Info */}
           <div className="w-full md:w-1/3 bg-purple-100 p-4 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-md">
             <div className="text-center md:text-left">
-              <a href="#top" className="text-3xl font-bold text-purple-600 drop-shadow-sm mb-1 block transition-colors duration-200 hover:text-purple-500">Amy</a>
+              <a href="#top" className="text-3xl font-bold text-purple-600 drop-shadow-sm mb-1 block transition-colors duration-200 hover:text-purple-500">Martin</a>
               <p className="text-gray-700 mb-2 text-sm italic">Head Chef | Malaysian Cuisine Specialist 🎅</p>
               <div className="space-y-2 text-xs text-gray-700">
                 <div className="flex items-center gap-1">
@@ -71,7 +70,7 @@ export const App = () => {
             <section className="transition-all duration-300 hover:scale-[1.003]">
               <h2 className="text-xl font-bold text-purple-600 mb-1">About Me</h2>
               <p className="text-gray-700 leading-normal text-sm">
-                Hi! I'm Amy, a Malaysian chef who loves bringing people together with food—especially during the holidays! 🎄 With over 10 years in the kitchen, I've worked with big names like Gordon Ramsay and Bobby Flay. I'm all about making meals that bring joy and warmth to the table. Let's cook up something awesome together! 🍲🔥
+                Hi! I'm Martin, a Malaysian chef who loves bringing people together with food—especially during the holidays! 🎄 With over 10 years in the kitchen, I've worked with big names like Gordon Ramsay and Bobby Flay. I'm all about making meals that bring joy and warmth to the table. Let's cook up something awesome together! 🍲🔥
               </p>
             </section>
 
