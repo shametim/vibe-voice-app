@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="tailwindcss" />
     <title>Vibe Voice</title>
     <script type="module" src="./frontend.tsx"></script>
-    <style src="./styles.css"></style>
 </head>
 
 <body>
@@ -45,9 +44,7 @@
                         console.error("Failed to send instruction:", err);
                     })
                     .finally(() => {
-                        setTimeout(() => {  // Add delay before reload
-                            // location.reload(true);
-                        }, 500);  // 1000 ms (1 seconds) delay
+
                     });
             };
 
