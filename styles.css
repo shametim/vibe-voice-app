@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Franklin+Gothic+Medium&display=swap');
+
+/* Dark mode styles */
+.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.dark .bg-white {
+  background-color: #2d3748 !important;
+}
+
+.dark .text-gray-800 {
+  color: #f7fafc !important;
+}
+
+.dark .text-gray-700 {
+  color: #edf2f7 !important;
+}
+
+.dark .border-green-200 {
+  border-color: #2d3748 !important;
+}
+
+.dark .hover\:text-green-600:hover {
+  color: #48bb78 !important;
+}
