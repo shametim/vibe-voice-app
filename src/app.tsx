@@ -15,7 +15,7 @@ export const App = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen text-gray-800 p-6">
+    <div className="bg-blue-50 min-h-screen text-gray-800 p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <header className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-gray-900">
@@ -25,7 +25,7 @@ export const App = () => {
           <p className="text-gray-600 font-inter text-sm mt-1">Click to speak</p>
           <button
             onClick={handleVoiceCommand}
-            className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition shadow-md"
           >
             Say Something
           </button>
