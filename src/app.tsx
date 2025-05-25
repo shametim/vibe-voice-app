@@ -116,7 +116,7 @@ export const App = () => {
                 <li>Mike & Lisa</li>
                 <li>Emily & Chris</li>
                 <li>Parents & Siblings</li>
-                <li>Martin Ming</li>
+                <li>Martin Mink</li>
                 <li>Wendy</li>
               </ul>
             </div>
