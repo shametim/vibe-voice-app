@@ -4,41 +4,41 @@ export const App = () => {
   return (
     <div className="dark bg-purple-950 min-h-screen text-white p-8">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 bg-purple-900 p-4 z-50 shadow-md">
-        <div className="flex gap-4 overflow-x-auto">
+      <nav className="fixed top-0 left-0 right-0 bg-purple-900 p-4 z-50 shadow-md border-b border-purple-800">
+        <div className="flex gap-4 overflow-x-auto pb-2">
           <a
             href="#about"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             About
           </a>
           <a
             href="#education"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Education
           </a>
           <a
             href="#experience"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Experience
           </a>
           <a
             href="#skills"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Skills
           </a>
           <a
             href="#projects"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors"
+            className="px-4 py-2 bg-purple-700 text-white rounded font-franklin hover:bg-purple-800 transition-colors whitespace-nowrap"
           >
             Contact
           </a>
@@ -54,9 +54,18 @@ export const App = () => {
             👋 Hi! I'm a dental student at the University of Michigan and I'm really into patient care and helping people love their smiles. I'm always eager to learn and apply what I know in real-world settings.
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-purple-300">
-            <div>📍 Ann Arbor, MI</div>
-            <div>📧 amy@example.com</div>
-            <div>📱 (555) 123-4567</div>
+            <div className="flex items-center gap-2">
+              <span>📍</span>
+              <span>Ann Arbor, MI</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>📧</span>
+              <span>amy@example.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>📱</span>
+              <span>(555) 123-4567</span>
+            </div>
           </div>
         </div>
 
