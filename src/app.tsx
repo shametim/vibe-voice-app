@@ -113,11 +113,9 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Guest List</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>John & Sarah</li>
-                <li>Mike & Lisa</li>
-                <li>Emily & Chris</li>
-                <li>Parents & Siblings</li>
-                <li>Martin Mink</li>
+                <li>Sarah</li>
+                <li>Lisa</li>
+                <li>Emily</li>
                 <li>Wendy</li>
               </ul>
             </div>
