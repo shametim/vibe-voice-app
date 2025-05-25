@@ -61,15 +61,10 @@ export const App = () => {
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* Status Bar */}
-      <div className="fixed top-0 left-0 right-0 h-10 bg-gray-100 flex items-center justify-between px-4 z-50">
+      <div className="fixed top-0 left-0 right-0 h-10 bg-gray-100 flex items-center px-4 z-50">
         <div className="flex items-center space-x-2">
           <div className="w-6 h-6 rounded-full bg-gray-300"></div>
           <div className="text-gray-600 text-sm">{currentTime}</div>
-        </div>
-        <div className="flex items-center space-x-2 text-gray-600 text-sm">
-          <span>WiFi</span>
-          <span>•</span>
-          <span>Battery 90%</span>
         </div>
       </div>
 
