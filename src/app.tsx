@@ -27,7 +27,7 @@ export const App = () => {
             onClick={handleVoiceCommand}
             className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition shadow-md"
           >
-            Say Something
+            Click to speak now
           </button>
         </header>
 
