@@ -9,7 +9,7 @@ export const App = () => {
           <p className="text-gray-600 font-inter text-lg mt-2">Software Engineer | Full Stack Developer</p>
         </header>
 
-        <section className="mb-8">
+        <section className="mb-8 border-b pb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-gray-600 font-inter leading-relaxed">
             I'm a passionate software engineer with 5+ years of experience building scalable web applications and APIs. 
@@ -17,7 +17,7 @@ export const App = () => {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8 border-b pb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Experience</h2>
           <div className="space-y-6">
             <div>
@@ -37,7 +37,7 @@ export const App = () => {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8 border-b pb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Education</h2>
           <div>
             <h3 className="text-xl font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
@@ -45,25 +45,25 @@ export const App = () => {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8 border-b pb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">TypeScript</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">AWS</span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">React</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Node.js</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">TypeScript</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Python</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">AWS</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition">Docker</span>
           </div>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact</h2>
           <p className="text-gray-600 font-inter">
-            Email: <a href="mailto:john.doe@example.com" className="text-blue-600 hover:underline">john.doe@example.com</a>
+            Email: <a href="mailto:john.doe@example.com" className="text-blue-600 hover:text-blue-800 hover:underline transition">john.doe@example.com</a>
           </p>
           <p className="text-gray-600 font-inter mt-2">
-            LinkedIn: <a href="https://linkedin.com/in/johndoe" className="text-blue-600 hover:underline">linkedin.com/in/johndoe</a>
+            LinkedIn: <a href="https://linkedin.com/in/johndoe" className="text-blue-600 hover:text-blue-800 hover:underline transition">linkedin.com/in/johndoe</a>
           </p>
         </section>
       </div>
