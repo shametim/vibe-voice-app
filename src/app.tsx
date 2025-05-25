@@ -64,7 +64,7 @@ export const App = () => {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span className="text-white text-sm font-medium">Birthday Party Planner</span>
+          <span className="text-white text-sm font-medium">Plan Your Birthday Party</span>
         </div>
       </div>
 
