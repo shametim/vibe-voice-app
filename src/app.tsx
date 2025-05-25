@@ -1,9 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const App = () => {
+  const [cvFile, setCvFile] = useState<string | null>(null);
+
   useEffect(() => {
     document.title = "Amy's Dental Journey | Future Pediatric Dentist";
   }, []);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setCvFile(file.name);
+    }
+  };
 
   return (
     <div className="bg-gray-900 min-h-screen text-white p-6">
@@ -45,9 +54,26 @@ export const App = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Interests</h2>
           <ul className="list-disc list-inside text-teal-300 font-medium text-sm space-y-2">
-            <li>Outdoor adventures (hiking, camping)</li>
-            <li>Volunteering in community health</li>
-            <li>Learning new languages</li>
+            <label htmlFor="cv-upload" className="cursor-pointer">
+              <li className="flex items-center">
+                <svg className="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                </svg>
+                Upload CV (PDF)
+              </li>
+            </label>
+            <input
+              id="cv-upload"
+              type="file"
+              accept=".pdf"
+              onChange={handleFileChange}
+              className="hidden"
+            />
+            {cvFile && (
+              <li className="text-teal-300 text-sm">
+                Selected: <span className="font-medium">{cvFile}</span>
+              </li>
+            )}
           </ul>
         </section>
 
