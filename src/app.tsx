@@ -6,7 +6,7 @@ export const App = () => {
   const [browserSupport, setBrowserSupport] = useState<boolean>(true);
 
   useEffect(() => {
-    document.title = "40th Birthday Party Planner | Amy's 40th Birthday";
+    document.title = "Bachelorette Party Planner | Chicago 2025";
 
     if ('webkitSpeechRecognition' in window) {
       setBrowserSupport(true);
@@ -48,7 +48,7 @@ export const App = () => {
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* Party Planner Banner */}
-      <div className="fixed top-0 left-0 right-0 h-10 bg-gradient-to-r from-yellow-500 to-green-500 flex items-center justify-center shadow-md z-50">
+      <div className="fixed top-0 left-0 right-0 h-10 bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center shadow-md z-50">
         <div className="flex items-center space-x-2">
           <svg
             className="w-5 h-5 text-white"
@@ -64,7 +64,7 @@ export const App = () => {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             ></path>
           </svg>
-          <span className="text-white text-sm font-medium">Let's Plan Your 40th Birthday Party! 🎉</span>
+          <span className="text-white text-sm font-medium">Plan Your Bachelorette Party in Chicago! 🎉</span>
         </div>
       </div>
 
@@ -73,9 +73,9 @@ export const App = () => {
         {/* Left Panel - Instructions */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-5 flex flex-col items-center justify-start">
           <div className="text-center">
-            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your 40th Birthday</h2>
+            <h2 className="text-pink-500 font-bold text-base mb-2">Plan Your Bachelorette Party</h2>
             <p className="text-gray-600 text-sm">
-              Speak to update your birthday party details. Add guests, activities, and more on the right panel.
+              Speak to update your bachelorette party details. Add guests, activities, and more on the right panel.
             </p>
           </div>
         </div>
@@ -91,7 +91,8 @@ export const App = () => {
                 </div>
                 <div className="mt-4">
                   <h1 className="text-xl font-bold">Amy Nguyen</h1>
-                  <p className="text-gray-500 text-sm">40th Birthday | April 2024</p>
+                  <p className="text-gray-500 text-sm">Bachelorette Party | April 2025</p>
+                  <p className="text-gray-500 text-sm">3 Days, 2 Nights</p>
                 </div>
               </div>
             </div>
@@ -101,9 +102,9 @@ export const App = () => {
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg font-bold">Party Details</h2>
               </div>
-              <p className="font-semibold text-gray-800 text-sm">Date: Saturday, April 20, 2024</p>
-              <p className="text-gray-600 text-sm">Time: 2:00 PM - 5:00 PM</p>
-              <p className="text-gray-500 text-sm mt-1">Venue: Tea House in Carytown, Ann Arbor</p>
+              <p className="font-semibold text-gray-800 text-sm">Date: April 18-20, 2025</p>
+              <p className="text-gray-600 text-sm">Time: 10:00 AM - 2:00 AM (varies by day)</p>
+              <p className="text-gray-500 text-sm mt-1">Venue: Chicago, IL</p>
             </div>
 
             {/* Guest List Card */}
@@ -127,10 +128,10 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Activities</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>40th Birthday Trivia Game</li>
-                <li>Photo Booth with Props</li>
-                <li>Memory Lane Timeline Wall</li>
-                <li>Open Bar with Signature Cocktails</li>
+                <li>Spa Day at The Spa Chicago</li>
+                <li>Brunch at a Rooftop Restaurant</li>
+                <li>Club Night at The Aragon Ballroom</li>
+                <li>City Tour & Photo Session</li>
                 <li>Group Dance Party</li>
               </ul>
             </div>
@@ -141,7 +142,7 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Decorations</h2>
               </div>
               <p className="text-gray-600 font-medium text-sm leading-relaxed">
-                Balloons with "40" graphics, vintage photo displays, custom banners, and a memory wall with photos from past birthdays.
+                Pink and gold balloons, "Bridal Bachelorette" banners, welcome bags with spa treats, and a photo wall with bachelorette-themed props.
               </p>
             </div>
 
@@ -151,10 +152,10 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Food & Drinks</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Mini gourmet sliders and charcuterie boards</li>
-                <li>Signature cocktail station</li>
-                <li>Custom 40th birthday cake</li>
-                <li>Wine tasting bar</li>
+                <li>Brunch with mimosas and pastries</li>
+                <li>Spa snacks and herbal tea</li>
+                <li>Open bar at the club</li>
+                <li>Custom bachelorette cupcakes</li>
                 <li>Soft drinks and mocktails</li>
               </ul>
             </div>
@@ -167,11 +168,11 @@ export const App = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-3 rounded">
                   <h3 className="text-gray-700 font-semibold text-sm mb-1">Total Budget</h3>
-                  <p className="text-gray-600 text-sm">$1,200</p>
+                  <p className="text-gray-600 text-sm">$60</p>
                 </div>
                 <div className="bg-gray-50 p-3 rounded">
                   <h3 className="text-gray-700 font-semibold text-sm mb-1">Spent So Far</h3>
-                  <p className="text-gray-600 text-sm">$750</p>
+                  <p className="text-gray-600 text-sm">$40</p>
                 </div>
               </div>
             </div>
@@ -183,7 +184,7 @@ export const App = () => {
               </div>
               <div className="mt-2 p-3 border-l-4 border-yellow-500 bg-gray-50">
                 <p className="text-yellow-500 font-medium text-sm">
-                  Pro tip: Include a "40 Years of Memories" timeline wall with photos and mementos.
+                  Pro tip: Include a welcome bag with a spa gift set and a personalized note for each guest.
                 </p>
               </div>
             </div>
