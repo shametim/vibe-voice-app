@@ -7,7 +7,7 @@ export const App = () => {
 
   return (
     <div className="bg-blue-900 min-h-screen text-white p-6">
-      <div className="max-w-3xl mx-4 bg-blue-800 rounded-xl shadow-lg p-6">
+      <div className="max-w-3xl mx-auto bg-blue-800 rounded-xl shadow-lg p-6">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-white">
             Hey there, I'm Amy! 😊
