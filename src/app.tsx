@@ -71,7 +71,7 @@ export const App = () => {
       {/* Two-Panel Layout */}
       <div className="pt-16 px-4 pb-20 flex flex-1 h-full">
         {/* Left Panel - Static Message */}
-        <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center justify-center">
+        <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center justify-start">
           <div className="text-center">
             <h2 className="text-pink-500 font-bold text-lg mb-2">Change Your Resume</h2>
             <p className="text-gray-600 text-sm">
