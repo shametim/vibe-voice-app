@@ -5,9 +5,9 @@ export const App = () => {
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* New Hero Section */}
       <div className="bg-indigo-600 text-white p-6 md:p-8 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold">Hey there!</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Vibe Voice</h1>
         <p className="mt-2 text-indigo-100">
-          Turn your voice messages into text and share them with ease. 🎙️✨
+          Turn your voice messages into a website and share them with ease. 🎙️✨
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
