@@ -56,7 +56,18 @@ export const App = () => {
               
               <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-800">Head Chef</h3>
-                <p className="text-gray-600 mb-1">Seri Warisan Restaurant, Chicago • 2018 - Present</p>
+                <p className="text-gray-600 mb-1">Gordon Ramsay's Restaurant, Chicago • 2023 - Present</p>
+                <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
+                  <li>Managed a high-pressure kitchen environment in a Michelin-starred establishment</li>
+                  <li>Collaborated with Gordon Ramsay on menu development and kitchen operations</li>
+                  <li>Trained and led a team of 20+ chefs and kitchen staff</li>
+                  <li>Improved food quality and consistency, contributing to a 40% increase in customer satisfaction</li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-gray-800">Head Chef</h3>
+                <p className="text-gray-600 mb-1">Seri Warisan Restaurant, Chicago • 2018 - 2023</p>
                 <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
                   <li>Lead a team of 15+ kitchen staff and manage daily operations of the 100-seat restaurant</li>
                   <li>Developed signature dishes including Ayam Percik, Laksa Lemak, and Char Kway Teow</li>
@@ -78,7 +89,7 @@ export const App = () => {
 
               <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-800">Executive Chef</h3>
-                <p className="text-gray-600 mb-1">Rasa Nusantara, Penang • 2012 - 2018</p>
+                <p className="text-gray-600 mb-1">Rasa Nusantara, Penang • 2012 - 2015</p>
                 <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
                   <li>Expanded menu to include regional Malaysian specialties from Sabah and Sarawak</li>
                   <li>Trained 20+ staff members in traditional cooking techniques and food presentation</li>
