@@ -34,18 +34,33 @@ export const App = () => {
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Personal Details</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gradient-to-r from-red-600 via-yellow-600 to-violet-600 p-4 rounded-lg">
-              <p className="font-semibold text-white">Height</p>
-              <p className="text-yellow-200">5'4"</p>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="flex items-center p-4 border border-yellow-300 rounded-lg">
+              <svg className="w-6 h-6 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              </svg>
+              <div>
+                <p className="font-semibold text-white">Height</p>
+                <p className="text-yellow-200">5'4"</p>
+              </div>
             </div>
-            <div className="bg-gradient-to-r from-red-600 via-yellow-600 to-violet-600 p-4 rounded-lg">
-              <p className="font-semibold text-white">Morning Snack</p>
-              <p className="text-yellow-200">Chips and Guacamole</p>
+            <div className="flex items-center p-4 border border-yellow-300 rounded-lg">
+              <svg className="w-6 h-6 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <p className="font-semibold text-white">Morning Snack</p>
+                <p className="text-yellow-200">Chips and Guacamole</p>
+              </div>
             </div>
-            <div className="bg-gradient-to-r from-red-600 via-yellow-600 to-violet-600 p-4 rounded-lg">
-              <p className="font-semibold text-white">Siblings</p>
-              <p className="text-yellow-200">1 sister, Sarah. We fight a lot but love each other deeply.</p>
+            <div className="flex items-center p-4 border border-yellow-300 rounded-lg">
+              <svg className="w-6 h-6 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+              <div>
+                <p className="font-semibold text-white">Siblings</p>
+                <p className="text-yellow-200">1 sister, Sarah. We fight a lot but love each other deeply.</p>
+              </div>
             </div>
           </div>
         </section>
