@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const App = () => {
   useEffect(() => {
-    document.title = 'Hey there, kitty lover!';
+    document.title = 'Orange Whiskers Miguel m i g u o';
   }, []);
 
   return (
@@ -10,7 +10,7 @@ export const App = () => {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
         <header className="mb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
-            Orange Whiskers
+            Orange Whiskers Miguel m i g u o
           </h1>
           <p className="text-gray-600 font-inter text-lg mt-2">Adventurous Stray | Expert Mouser</p>
         </header>
