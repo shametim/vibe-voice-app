@@ -69,7 +69,7 @@ export const App = () => {
       </div>
 
       {/* Two-Panel Layout */}
-      <div className="pt-16 px-4 pb-20 flex flex-1">
+      <div className="pt-16 px-4 pb-20 flex flex-1 h-full">
         {/* Left Panel - Static Message */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center justify-center">
           <div className="text-center">
@@ -81,8 +81,8 @@ export const App = () => {
         </div>
 
         {/* Right Panel - Resume View */}
-        <div className="w-3/4 pl-6 overflow-y-auto">
-          <div className="max-w-3xl mx-auto space-y-6">
+        <div className="w-3/4 pl-6 overflow-y-auto h-full">
+          <div className="max-w-3xl mx-auto space-y-6 h-full">
             {/* Profile Header */}
             <div className="bg-white rounded-2xl shadow-md p-4">
               <div className="flex flex-col items-center text-center">
