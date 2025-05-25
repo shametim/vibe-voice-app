@@ -78,6 +78,21 @@ export const App = () => {
         </section>
 
         <section className="mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Math Involvement</h2>
+          <div className="text-center border-2 border-teal-500 rounded-lg p-4 bg-gray-700">
+            <p className="text-teal-300 text-sm mb-2">Quadratic formula:</p>
+            <div className="text-2xl font-mono text-white">
+              x = <span className="ml-1">−b</span> ± 
+              <span className="relative">
+                <span className="absolute -top-4 left-0">√</span>
+                <span className="ml-2">b² - 4ac</span>
+              </span>
+              <span className="ml-2">÷ 2a</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Personal Profile</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center p-4 border border-teal-500 rounded-lg">
