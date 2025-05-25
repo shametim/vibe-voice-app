@@ -135,7 +135,7 @@ export const App = () => {
                 <li>Brunch at The Riverwalk Rooftop</li>
                 <li>Club Night at The Aragon Ballroom</li>
                 <li>City Tour & Photo Session</li>
-                <li>Group Dance Party</li>
+                <li>Group Dance Party <span className="text-gray-500">at The Chicago Theatre</span></li>
               </ul>
             </div>
 
