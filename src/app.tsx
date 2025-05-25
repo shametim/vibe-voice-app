@@ -3,7 +3,7 @@ export const App = () => {
     <div className="bg-gray-50 min-h-screen text-gray-800 p-6">
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8">
         <header className="mb-6">
-          <h1 className="text-3xl font-semibold mb-1">John Doe</h1>
+          <h1 className="text-3xl font-semibold mb-1">Martin</h1>
           <p className="text-gray-600 font-inter">Software Engineer | Full-Stack Developer</p>
         </header>
 
