@@ -46,7 +46,7 @@ export const App = () => {
             <section>
               <h2 className="text-2xl font-bold text-pink-600 mb-2">About Me</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hey there! I'm Ming Tan, a passionate Malaysian chef with 12+ years of experience in traditional Nonya, Malay, and Chinese-Peranakan cuisine. 
+                Hey! I'm Ming Tan, a passionate Malaysian chef with 12+ years of experience in traditional Nonya, Malay, and Chinese-Peranakan cuisine. 
                 I love creating authentic and flavorful dishes while working with amazing teams. 
                 I've had the chance to collaborate with chefs like Gordon Ramsay and Bobby Flay, and I'm always excited to bring new ideas to the kitchen.
               </p>
