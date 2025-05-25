@@ -51,7 +51,7 @@ export const App = () => {
         <div id="about" className="bg-purple-900 rounded-lg p-6 mb-8 border border-purple-800 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-purple-200 mb-4">
-            👋 Hey there, I'm a dental student at the University of Michigan who's super passionate about patient care and helping people love their smiles. I'm always looking for ways to grow and apply what I've learned in real-world settings.
+            👋 Hi! I'm a dental student at the University of Michigan and I'm really into patient care and helping people love their smiles. I'm always eager to learn and apply what I know in real-world settings.
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-purple-300">
             <div>📍 Ann Arbor, MI</div>
