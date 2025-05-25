@@ -129,7 +129,10 @@ export const App = () => {
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
                 <li>Spa Day at The Spa Chicago</li>
-                <li>Brunch at a Rooftop Restaurant</li>
+                <li>Brunch at The Promontory (The Langham)</li>
+                <li>Brunch at The Signature Room on the 95th</li>
+                <li>Brunch at The Rooftop at Trump Tower</li>
+                <li>Brunch at The Riverwalk Rooftop</li>
                 <li>Club Night at The Aragon Ballroom</li>
                 <li>City Tour & Photo Session</li>
                 <li>Group Dance Party</li>
