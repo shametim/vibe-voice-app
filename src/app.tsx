@@ -10,7 +10,7 @@ export const App = () => {
       <div className="max-w-3xl mx-4 bg-blue-800 rounded-xl shadow-lg p-6">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-white">
-            Hi, I'm Amy! 😊
+            Hey there, I'm Amy! 😊
           </h1>
           <p className="text-teal-200 font-inter text-lg mt-2">Future Pediatric Dentist | Class of '25</p>
           <p className="text-indigo-200 text-sm mt-1">University of Michigan</p>
