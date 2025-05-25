@@ -231,6 +231,28 @@ export const App = () => {
                 </p>
               )}
             </div>
+
+            {/* New Card: Finding a New Boyfriend */}
+            <div className="bg-white rounded-xl shadow-sm p-4">
+              <div className="flex justify-between items-center mb-2">
+                <h2 className="text-lg font-bold">Finding a New Boyfriend</h2>
+              </div>
+              <p className="text-gray-600 text-sm mb-2">
+                If your current partner is uncomfortable meeting your family, it might be time to explore new connections. Here are some great ways to find someone who is more open and family-friendly:
+              </p>
+              <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
+                <li>Try dating apps like <span className="font-bold">Tinder</span>, <span className="font-bold">Bumble</span>, or <span className="font-bold">Hinge</span> to meet new people who share your values.</li>
+                <li>Join local <span className="font-bold">singles events</span> or <span className="font-bold">group activities</span> (e.g., cooking classes, hiking groups, or book clubs) to meet like-minded individuals.</li>
+                <li>Consider <span className="font-bold">friend-introduced dating</span>—let your friends know you're looking for someone who is family-oriented.</li>
+                <li>Attend <span className="font-bold">family-friendly events</span> or <span className="font-bold">community gatherings</span> where you can naturally introduce a new partner to your loved ones.</li>
+                <li>Focus on <span className="font-bold">self-care and confidence</span>—you deserve someone who is excited to meet your family and be part of your life.</li>
+              </ul>
+              <div className="mt-3 p-3 border-l-4 border-pink-500 bg-gray-50">
+                <p className="text-pink-500 font-medium text-sm">
+                  💡 Tip: Take your time and don’t rush into a new relationship. The right person will appreciate your family and want to be part of your life.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
