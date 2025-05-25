@@ -69,7 +69,7 @@ export const App = () => {
       </div>
 
       {/* Two-Panel Layout */}
-      <div className="pt-16 px-4 pb-20 flex h-[calc(100vh-4rem)]">
+      <div className="pt-16 px-4 pb-20 flex flex-1">
         {/* Left Panel - Static Message */}
         <div className="w-1/4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center justify-center">
           <div className="text-center">
