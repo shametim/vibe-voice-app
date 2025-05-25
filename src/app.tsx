@@ -5,7 +5,7 @@ export const App = () => {
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* New Hero Section */}
       <div className="bg-indigo-600 text-white p-6 md:p-8 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold">Voice App</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Vibe Voice App</h1>
         <p className="mt-2 text-indigo-100">
           Speak, Touch, or No—Experience the future of interaction!
         </p>
