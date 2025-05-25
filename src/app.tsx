@@ -128,7 +128,10 @@ export const App = () => {
                 <h2 className="text-lg font-bold">Activities</h2>
               </div>
               <ul className="list-disc list-inside text-gray-600 font-medium text-sm space-y-1">
-                <li>Spa Day at The Spa Chicago</li>
+                <li>Ritz-Carlton Spa Chicago</li>
+                <li>Four Seasons Hotel Chicago Spa</li>
+                <li>The Peninsula Chicago Spa</li>
+                <li>Spa at Trump International Hotel & Tower</li>
                 <li>Brunch at The Promontory (The Langham)</li>
                 <li>Brunch at The Signature Room on the 95th</li>
                 <li>Brunch at The Rooftop at Trump Tower</li>
