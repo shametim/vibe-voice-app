@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const App = () => {
   useEffect(() => {
-    document.title = 'Welcome to My App';
+    document.title = 'Hello World';
   }, []);
 
   return (
