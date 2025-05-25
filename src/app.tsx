@@ -1,4 +1,3 @@
-import React from 'react';
 
 export const App = () => {
   return (
@@ -79,7 +78,7 @@ export const App = () => {
             {/* Work Experience */}
             <section>
               <h2 className="text-xl font-bold text-purple-600 mb-1">Work Experience</h2>
-              
+
               <div className="mb-2 p-3 bg-gray-50 rounded-lg transition-colors duration-200 hover:bg-gray-100">
                 <h3 className="text-lg font-semibold text-gray-800">Head Chef</h3>
                 <p className="text-gray-600 mb-0.5">Gordon Ramsay's Restaurant, Chicago • 2023 - Present</p>
