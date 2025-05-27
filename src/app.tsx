@@ -2,8 +2,8 @@ export const App = () => {
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white text-gray-800">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-amber-800">l e k a</h1>
-        <p className="text-lg text-gray-600 mt-2">Software Developer</p>
+        <h1 className="text-4xl font-bold text-amber-800 font-serif">Leka</h1>
+        <p className="text-lg text-gray-600 mt-2">Software Dev</p>
       </header>
 
       <section className="mb-8">
