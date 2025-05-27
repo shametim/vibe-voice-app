@@ -1,6 +1,15 @@
 export const App = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl">
+    <div className="max-w-3xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative">
+      {/* Fixed Navigation Sidebar */}
+      <nav className="fixed top-24 right-4 h-[calc(100vh-6rem)] w-24 flex flex-col justify-start items-center space-y-4 z-40">
+        <a href="#experience" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">E</a>
+        <a href="#summary" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">S</a>
+        <a href="#education" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">E</a>
+        <a href="#skills" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">S</a>
+        <a href="#contact" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">C</a>
+      </nav>
+
       <header className="text-center mb-8">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
           Martin
@@ -9,7 +18,7 @@ export const App = () => {
         <p className="text-sm text-gray-500 mt-1">martin@gmail.com | (123) 456-7890 | linkedin.com/in/amy-chen</p>
       </header>
 
-      <section className="mb-8">
+      <section id="experience" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
           Eksperiencë e Punës
         </h2>
@@ -33,7 +42,7 @@ export const App = () => {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section id="summary" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
           Përmbledhje Profesionale
         </h2>
@@ -42,7 +51,7 @@ export const App = () => {
         </p>
       </section>
 
-      <section className="mb-8">
+      <section id="education" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
           Arsimimi
         </h2>
@@ -52,7 +61,7 @@ export const App = () => {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section id="skills" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
           Shkatërrime
         </h2>
@@ -72,7 +81,7 @@ export const App = () => {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section id="contact" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
           Kontaktoni Me
         </h2>
