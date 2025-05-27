@@ -8,13 +8,6 @@ export const App = () => {
       </header>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Professional Summary</h2>
-        <p className="text-gray-700">
-          Results-driven software engineer with 5+ years of experience in full-stack development, specializing in building scalable web applications and APIs. Passionate about clean code, user experience, and agile methodologies.
-        </p>
-      </section>
-
-      <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Work Experience</h2>
         <div className="mb-6">
           <h3 className="font-bold text-lg">Senior Full-Stack Developer</h3>
@@ -34,6 +27,13 @@ export const App = () => {
             <li>Contributed to open-source projects and mentored junior developers.</li>
           </ul>
         </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Professional Summary</h2>
+        <p className="text-gray-700">
+          Results-driven software engineer with 5+ years of experience in full-stack development, specializing in building scalable web applications and APIs. Passionate about clean code, user experience, and agile methodologies.
+        </p>
       </section>
 
       <section className="mb-8">
