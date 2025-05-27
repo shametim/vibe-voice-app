@@ -8,7 +8,7 @@ export const App = () => {
             Vibe Voice App
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Speak to the website to change it however you want
+            Chat with the site to tweak it however you like!
           </p>
         </header>
       </div>
