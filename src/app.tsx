@@ -2,9 +2,9 @@ export const App = () => {
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white text-gray-800 relative">
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[64px_1fr] gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 relative">
         {/* Left Column: Instructions (Overlay) */}
-        <div className="w-64 p-6 bg-white border-r border-gray-200 shadow-sm">
+        <div className="absolute left-0 top-0 w-64 p-6 bg-white border-r border-gray-200 shadow-sm z-10">
           <h2 className="text-2xl font-semibold mb-4">How to Use</h2>
           <ul className="space-y-3 text-sm text-gray-600">
             <li>
@@ -23,7 +23,7 @@ export const App = () => {
         </div>
 
         {/* Right Column: Original Content */}
-        <div>
+        <div className="pl-64">
           <header className="text-center mb-8">
             <h1 className="text-4xl font-bold text-amber-800 font-serif">Hey Leka</h1>
             <p className="text-lg text-gray-600 mt-2">Software Dev</p>
