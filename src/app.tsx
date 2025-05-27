@@ -5,17 +5,17 @@ export const App = () => {
         <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
           Martin
         </h1>
-        <p className="text-lg text-gray-600 mt-2">Software Engineer | Full-Stack Developer</p>
+        <p className="text-lg text-gray-600 mt-2">Inxhinier i Softverit | Inxhinier Full-Stack</p>
         <p className="text-sm text-gray-500 mt-1">martin@gmail.com | (123) 456-7890 | linkedin.com/in/amy-chen</p>
       </header>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-          Work Experience
+          Eksperiencë e Punës
         </h2>
         <div className="mb-6">
-          <h3 className="font-bold text-lg text-amber-800">Senior Full-Stack Developer</h3>
-          <p className="text-gray-600">Rocket Mortgage | Jan 2020 – Present</p>
+          <h3 className="font-bold text-lg text-amber-800">Inxhinier Full-Stack Senior</h3>
+          <p className="text-gray-600">Rocket Mortgage | Jan 2020 – Tani</p>
           <ul className="list-disc list-inside mt-2 text-gray-700 ml-4 space-y-1">
             <li>Architected and maintained loan origination systems using React, TypeScript, and Node.js.</li>
             <li>Improved system performance by 40% through caching, database optimization, and microservices refactoring.</li>
@@ -23,7 +23,7 @@ export const App = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-bold text-lg text-amber-800">Software Engineer</h3>
+          <h3 className="font-bold text-lg text-amber-800">Inxhinier i Softverit</h3>
           <p className="text-gray-600">InnovateTech | Jun 2017 – Dec 2019</p>
           <ul className="list-disc list-inside mt-2 text-gray-700 ml-4 space-y-1">
             <li>Developed and maintained internal tools using Python and Django.</li>
@@ -35,26 +35,26 @@ export const App = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-          Professional Summary
+          Përmbledhje Profesionale
         </h2>
         <p className="text-gray-800 leading-relaxed">
-          Results-driven software engineer with 5+ years of experience in full-stack development, specializing in building scalable web applications and APIs. Passionate about clean code, user experience, and agile methodologies.
+          Inxhinier i softverit me rezultate, me më shumë se 5 vjet përvojë në zhvillim full-stack, duke veçuar në ndërtimin e aplikacioneve web dhe API-ve të shkallëzuara. I pasionuar nga kodimi i pastër, përvoja e përdoruesit dhe metodologjitë agile.
         </p>
       </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-          Education
+          Arsimimi
         </h2>
         <div>
-          <h3 className="font-bold text-lg">Bachelor of Science in Computer Science</h3>
-          <p className="text-gray-600">University of California, Berkeley | 2013 – 2017</p>
+          <h3 className="font-bold text-lg">Baklora në Inxhinieri e Softverit</h3>
+          <p className="text-gray-600">Universiteti i Kalifornisë, Berkeley | 2013 – 2017</p>
         </div>
       </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-          Skills
+          Shkatërrime
         </h2>
         <div className="grid grid-cols-2 gap-4">
           <ul className="text-gray-700 space-y-1">
@@ -74,20 +74,20 @@ export const App = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-          Contact Me
+          Kontaktoni Me
         </h2>
         <form className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                Name
+                Emri
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                placeholder="Your name"
+                placeholder="Emri juaj"
               />
             </div>
             <div>
@@ -99,32 +99,32 @@ export const App = () => {
                 id="email"
                 name="email"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                placeholder="Your email"
+                placeholder="Email juaj"
               />
             </div>
           </div>
           <div>
             <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-              Subject
+              Tema
             </label>
             <input
               type="text"
               id="subject"
               name="subject"
               className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-              placeholder="Subject"
+              placeholder="Tema"
             />
           </div>
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-              Message
+              Mesazh
             </label>
             <textarea
               id="message"
               name="message"
               rows={4}
               className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-              placeholder="Your message"
+              placeholder="Mesazhi juaj"
             />
           </div>
           <div>
@@ -132,7 +132,7 @@ export const App = () => {
               type="submit"
               className="w-full px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
             >
-              Send Message
+              Dërgo Mesazhin
             </button>
           </div>
         </form>
