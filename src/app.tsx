@@ -5,7 +5,7 @@ export const App = () => {
     <div className="max-w-5xl mx-auto p-6 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-col bg-white">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800">John Doe</h1>
-        <p className="text-xl text-gray-600 mt-2">Software Engineer | Web Developer | Open Source Contributor</p>
+        <p className="text-xl text-gray-600 mt-2">Software Dev | Web Dev | Open Source Enthusiast</p>
         <div className="mt-4 flex justify-center space-x-4 text-gray-500">
           <span>john.doe@example.com</span>
           <span>•</span>
@@ -21,20 +21,18 @@ export const App = () => {
           <section>
             <h2 className="text-xl font-semibold text-gray-700 mb-3">Professional Summary</h2>
             <p className="text-gray-600 leading-relaxed">
-              Results-driven software engineer with 5+ years of experience building scalable web applications. 
-              Specialized in full-stack development with a focus on React and Node.js. Passionate about clean code 
-              and collaborative agile environments.
+              Passionate about building scalable web apps with 5+ years of experience. I love working in full-stack environments using React and Node.js. Big fan of clean code and agile teams that ship fast and ship well.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-gray-700 mb-3">Technical Skills</h2>
             <ul className="space-y-2 text-gray-600">
-              <li>• JavaScript/TypeScript, React, Node.js</li>
-              <li>• REST APIs, GraphQL</li>
-              <li>• MongoDB, PostgreSQL</li>
-              <li>• Docker, AWS</li>
-              <li>• Agile/Scrum, CI/CD</li>
+              <li>• 🚀 JavaScript/TypeScript, React, Node.js</li>
+              <li>• 🌐 REST APIs, GraphQL</li>
+              <li>• 🗄️ MongoDB, PostgreSQL</li>
+              <li>• 🐳 Docker, AWS</li>
+              <li>• 🔄 Agile/Scrum, CI/CD</li>
             </ul>
           </section>
 
