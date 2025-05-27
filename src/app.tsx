@@ -63,7 +63,7 @@ export const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-green-100 flex flex-col">
       {/* Header */}
       <header className="bg-white shadow-md p-4 sm:p-6 border-b border-gray-200">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -91,7 +91,7 @@ export const App = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full py-2 rounded-lg font-medium transition-all ${
+                className={`w-full py-2 rounded-lg font-medium transition-all transform active:scale-98 ${
                   loading
                     ? 'bg-gray-400 text-white cursor-not-allowed opacity-50'
                     : 'bg-gradient-to-r from-blue-500 to-green-500 text-white hover:from-blue-600 hover:to-green-600'
@@ -100,7 +100,7 @@ export const App = () => {
                 {loading ? (
                   <span className="flex items-center justify-center">
                     <svg
-                      className="animate-spin h-6 w-6 text-white"
+                      className="animate-spin h-7 w-7 text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -127,9 +127,9 @@ export const App = () => {
               </button>
             </form>
             {error && (
-              <p className="text-red-600 text-sm mt-2 flex items-center">
+              <p className="text-red-600 text-sm mt-2 flex items-center bg-red-50 px-2 py-1 rounded border border-red-200">
                 <svg
-                  className="w-4 h-4 mr-1"
+                  className="w-4 h-4 mr-1 text-red-600"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export const App = () => {
                   {weather.forecast.map((item, index) => (
                     <div
                       key={index}
-                      className="bg-gray-50 p-3 rounded-lg border border-gray-200 text-center"
+                      className="bg-blue-50 p-3 rounded-lg border border-blue-100 text-center hover:shadow-sm transition-shadow"
                     >
                       <p className="text-sm font-medium text-gray-700">{getDay(item.dt)}</p>
                       <img
