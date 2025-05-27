@@ -6,7 +6,8 @@ export const App = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const API_KEY = 'YOUR_API_KEY_HERE'; // Replace with your OpenWeatherMap API key
+  // ⚠️ Replace with your valid OpenWeatherMap API key
+  const API_KEY = 'YOUR_API_KEY_HERE';
 
   const fetchWeather = async () => {
     if (!location.trim()) {
@@ -92,14 +93,14 @@ export const App = () => {
                 disabled={loading}
                 className={`w-full py-2 rounded-lg font-medium transition-all ${
                   loading
-                    ? 'bg-gray-400 text-white cursor-not-allowed'
+                    ? 'bg-gray-400 text-white cursor-not-allowed opacity-50'
                     : 'bg-gradient-to-r from-blue-500 to-green-500 text-white hover:from-blue-600 hover:to-green-600'
                 }`}
               >
                 {loading ? (
                   <span className="flex items-center justify-center">
                     <svg
-                      className="animate-spin h-5 w-5 text-white"
+                      className="animate-spin h-6 w-6 text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -125,7 +126,23 @@ export const App = () => {
                 )}
               </button>
             </form>
-            {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
+            {error && (
+              <p className="text-red-600 text-sm mt-2 flex items-center">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                {error}
+              </p>
+            )}
           </div>
         </div>
 
@@ -188,8 +205,8 @@ export const App = () => {
 
       {/* Footer */}
       <footer className="bg-white shadow-inner py-4 px-4 text-center text-gray-500 text-sm border-t border-gray-200">
-        <p className="mb-1">Powered by OpenWeatherMap API</p>
-        <p>© 2025 Weather App. All rights reserved.</p>
+        <p className="mb-1 font-medium">Powered by OpenWeatherMap API</p>
+        <p className="font-medium">© 2025 Weather App. All rights reserved.</p>
       </footer>
     </div>
   );
