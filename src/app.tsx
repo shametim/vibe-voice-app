@@ -25,7 +25,7 @@ export const App = () => {
         {/* Right Column: Original Content */}
         <div>
           <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-amber-800 font-serif">Leka</h1>
+            <h1 className="text-4xl font-bold text-amber-800 font-serif">Hey Leka</h1>
             <p className="text-lg text-gray-600 mt-2">Software Dev</p>
           </header>
 
