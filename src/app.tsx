@@ -63,7 +63,7 @@ export const App = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <header className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-800 mb-4">🇦🇱 Discover the Albanian Language</h1>
+          <h1 className="text-5xl font-bold text-gray-800 mb-4">🇦🇱 Hey! Discover the Albanian Language</h1>
           <p className="text-xl text-gray-600 mb-8">Explore the beauty, history, and culture of the Albanian language</p>
           <div className="flex justify-center space-x-6 text-gray-500">
             <span>info@albanianlanguage.org</span>
