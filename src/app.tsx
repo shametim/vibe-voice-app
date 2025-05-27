@@ -5,10 +5,10 @@ export const App = () => {
       <div className="w-1/2">
         <header className="text-center mb-8">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
-            Albanian Language Forum
+            Albanian Language Hangout
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Share ideas, learn new things, and help develop the Albanian language!
+            Chill, swap tips, and help boost the Albanian language!
           </p>
         </header>
       </div>
