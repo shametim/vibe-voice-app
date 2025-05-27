@@ -61,16 +61,16 @@ export const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 flex flex-col">
       {/* Header */}
-      <header className="bg-white shadow-md p-4 sm:p-6">
+      <header className="bg-white shadow-md p-4 sm:p-6 border-b border-gray-200">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div className="mb-4 sm:mb-0">
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 italic tracking-widest">🧠 Stroke Recovery</h1>
             <p className="text-sm sm:text-base text-gray-600 mt-1">Left Side Neglect Exercises</p>
           </div>
           <div className="flex items-center space-x-4 text-gray-500 text-sm">
-            <span>support@strokerecovery.org</span>
+            <span className="hover:text-blue-600 transition-colors">support@strokerecovery.org</span>
             <span>•</span>
-            <span>@stroke_recovery</span>
+            <span className="hover:text-green-600 transition-colors">@stroke_recovery</span>
           </div>
         </div>
       </header>
@@ -80,7 +80,7 @@ export const App = () => {
         {/* Sidebar */}
         <aside className="w-full md:w-64 md:sticky md:top-24 space-y-6 mb-6 md:mb-0">
           {/* Voice Search Card */}
-          <div className="bg-white rounded-xl shadow p-4">
+          <div className="bg-white rounded-xl shadow p-4 border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-sm font-medium text-gray-700 mb-3">Search Exercises</h3>
             <button
               onClick={isRecording ? stopRecording : startRecording}
@@ -126,7 +126,7 @@ export const App = () => {
           </div>
 
           {/* Why Explore Card */}
-          <div className="bg-white rounded-xl shadow p-4">
+          <div className="bg-white rounded-xl shadow p-4 border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-sm font-medium text-gray-700 mb-3">Why This Matters</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Left side neglect is a common post-stroke condition where patients fail to recognize or respond to stimuli on the left side of their body. These exercises are designed by neurorehabilitation experts to help retrain the brain.
@@ -134,22 +134,22 @@ export const App = () => {
           </div>
 
           {/* Interesting Facts Card */}
-          <div className="bg-white rounded-xl shadow p-4">
+          <div className="bg-white rounded-xl shadow p-4 border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-sm font-medium text-gray-700 mb-3">Key Statistics</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
+              <div className="flex items-center space-x-2 p-2 bg-blue-50 rounded-lg">
                 <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-gray-700 text-sm">Affects 30-50% of stroke survivors</span>
               </div>
-              <div className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
+              <div className="flex items-center space-x-2 p-2 bg-green-50 rounded-lg">
                 <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-gray-700 text-sm">Early intervention improves outcomes</span>
               </div>
-              <div className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
+              <div className="flex items-center space-x-2 p-2 bg-purple-50 rounded-lg">
                 <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -162,7 +162,7 @@ export const App = () => {
         {/* Main Content Area */}
         <div className="w-full md:pl-6 space-y-6">
           {/* Tab Navigation */}
-          <div className="bg-white rounded-xl shadow p-3">
+          <div className="bg-white rounded-xl shadow p-3 border border-gray-100">
             <div className="flex border-b border-gray-200">
               <button className="px-4 py-2 text-sm font-medium text-gray-600 border-b-2 border-indigo-500">
                 Overview
@@ -174,7 +174,7 @@ export const App = () => {
           </div>
 
           {/* Understanding Neglect Card */}
-          <div className="bg-white rounded-xl shadow p-5">
+          <div className="bg-white rounded-xl shadow p-5 border border-gray-100 hover:shadow-md transition-shadow">
             <h2 className="text-lg font-semibold text-gray-700 mb-4">Understanding Left Side Neglect</h2>
             
             <div className="mb-6">
@@ -202,7 +202,7 @@ export const App = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden shadow-sm border border-gray-200">
                   <img src="https://picsum.photos/seed/neglect/600/400?random=1" alt="Left side neglect illustration" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -239,7 +239,7 @@ export const App = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden shadow-sm border border-gray-200">
                   <img src="https://picsum.photos/seed/exercises/600/400?random=2" alt="Exercise demonstration" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -247,7 +247,7 @@ export const App = () => {
           </div>
 
           {/* Recovery Tips Card */}
-          <div className="bg-white rounded-xl shadow p-5">
+          <div className="bg-white rounded-xl shadow p-5 border border-gray-100 hover:shadow-md transition-shadow">
             <h2 className="text-lg font-semibold text-gray-700 mb-4">Recovery Strategies</h2>
             
             <div className="mb-6">
@@ -281,7 +281,7 @@ export const App = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden shadow-sm border border-gray-200">
                   <img src="https://picsum.photos/seed/recovery/600/400?random=3" alt="Recovery techniques" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -318,7 +318,7 @@ export const App = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <div className="relative h-32 md:h-48 rounded-lg overflow-hidden shadow-sm border border-gray-200">
                   <img src="https://picsum.photos/seed/professionals/600/400?random=4" alt="Healthcare team" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -328,7 +328,7 @@ export const App = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner py-4 px-4 text-center text-gray-500 text-sm">
+      <footer className="bg-white shadow-inner py-4 px-4 text-center text-gray-500 text-sm border-t border-gray-200">
         <p className="mb-1">© 2025 Stroke Recovery Foundation. All rights reserved.</p>
         <p>Content last updated: {new Date().toLocaleDateString()}</p>
       </footer>
