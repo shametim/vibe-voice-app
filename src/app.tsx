@@ -8,7 +8,7 @@ export const App = () => {
             Forumi i Gjuhës Shqipe
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Diskutoni, mësoni, dhe ndihmoni në zhvillimin e gjuhës shqipe moderne.
+            Shkëmbe idua, mësoni gjëra të reja, dhe ndihmoni në zhvillimin e gjuhës shqipe!
           </p>
         </header>
       </div>
