@@ -14,7 +14,7 @@ export const App = () => {
       </div>
 
       {/* Right Half: Forum Content */}
-      <div className="w-1/2 ml-24">
+      <div className="w-full">
         {/* Left Icon Navigation Sidebar */}
         <nav className="fixed top-0 left-4 h-screen w-16 flex flex-col justify-start items-center space-y-8 z-40">
           <a href="#articles" className="text-amber-600 hover:text-amber-800 transition-all">
@@ -42,15 +42,6 @@ export const App = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </a>
-        </nav>
-
-        {/* Fixed Navigation Sidebar (Right) */}
-        <nav className="fixed top-24 right-4 h-[calc(100vh-6rem)] w-24 flex flex-col justify-start items-center space-y-4 z-40">
-          <a href="#articles" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">Articles</a>
-          <a href="#topics" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">Topics</a>
-          <a href="#about" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">About</a>
-          <a href="#guidelines" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">Guidelines</a>
-          <a href="#contact" className="w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md hover:bg-amber-700 transition">Contact</a>
         </nav>
 
         <section id="articles" className="mb-8">
