@@ -1,27 +1,27 @@
 export const App = () => {
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white text-gray-800 relative">
-      {/* Left Column: Instructions (Overlay) */}
-      <div className="absolute left-0 top-0 w-64 p-6 bg-white border-r border-gray-200 shadow-sm z-10">
-        <h2 className="text-2xl font-semibold mb-4">How to Use</h2>
-        <ul className="space-y-3 text-sm text-gray-600">
-          <li>
-            <strong>Change Name:</strong> Say "Change name to [Name]"
-          </li>
-          <li>
-            <strong>Add Experience:</strong> Say "Add experience as [Job Title] at [Company]"
-          </li>
-          <li>
-            <strong>Update Skills:</strong> Say "Add skill [Skill Name]"
-          </li>
-          <li>
-            <strong>Change Education:</strong> Say "Update education to [Degree] from [University]"
-          </li>
-        </ul>
-      </div>
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-[64px_1fr] gap-8">
+        {/* Left Column: Instructions (Overlay) */}
+        <div className="w-64 p-6 bg-white border-r border-gray-200 shadow-sm">
+          <h2 className="text-2xl font-semibold mb-4">How to Use</h2>
+          <ul className="space-y-3 text-sm text-gray-600">
+            <li>
+              <strong>Change Name:</strong> Say "Change name to [Name]"
+            </li>
+            <li>
+              <strong>Add Experience:</strong> Say "Add experience as [Job Title] at [Company]"
+            </li>
+            <li>
+              <strong>Update Skills:</strong> Say "Add skill [Skill Name]"
+            </li>
+            <li>
+              <strong>Change Education:</strong> Say "Update education to [Degree] from [University]"
+            </li>
+          </ul>
+        </div>
 
-      {/* Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 ml-64">
         {/* Right Column: Original Content */}
         <div>
           <header className="text-center mb-8">
