@@ -72,6 +72,18 @@ export const App = () => {
           </div>
         </header>
 
+        {/* Tab Navigation */}
+        <div className="bg-white rounded-2xl shadow-lg mb-8">
+          <div className="flex border-b border-gray-200">
+            <button className="px-6 py-4 text-lg font-medium text-gray-600 border-b-2 border-indigo-500">
+              Overview
+            </button>
+            <button className="px-6 py-4 text-lg font-medium text-gray-500 hover:text-gray-700">
+              Resources
+            </button>
+          </div>
+        </div>
+
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Sidebar - Left Column */}
