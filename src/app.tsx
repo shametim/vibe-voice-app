@@ -115,7 +115,7 @@ export const App = () => {
                     : 'bg-blue-500 text-white hover:bg-blue-600'
                 }`}
               >
-                {isRecording ? 'Stop Recording' : 'Start Microphone'}
+                {isRecording ? 'Stop' : 'Start Talking'}
               </button>
               {isRecording && (
                 <div className="flex items-center space-x-2 text-gray-600">
