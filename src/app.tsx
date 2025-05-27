@@ -25,7 +25,7 @@ export const App = () => {
         {/* Right Column: Marcela's Resume Content */}
         <div>
           <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-amber-800 font-serif">Hey Marcela!</h1>
+            <h1 className="text-4xl font-bold text-amber-800 font-serif">Marcela</h1>
             <p className="text-lg text-gray-600 mt-2">Accountant</p>
           </header>
 
