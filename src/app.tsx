@@ -2,7 +2,7 @@ export const App = () => {
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white text-gray-800 shadow-lg rounded-lg">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold">Amy Chen</h1>
+        <h1 className="text-4xl font-bold">Martin</h1>
         <p className="text-lg text-gray-600 mt-2">Software Engineer | Full-Stack Developer</p>
         <p className="text-sm text-gray-500 mt-1">amy.chen@example.com | (123) 456-7890 | linkedin.com/in/amy-chen</p>
       </header>
