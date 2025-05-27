@@ -1,6 +1,6 @@
 export const App = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-row">
+    <div className="max-w-5xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-row bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhESMIAAAAABJRU5ErkJggg==')] bg-cover bg-center bg-fixed">
       {/* Left Half: Forum Header */}
       <div className="w-1/2">
         <header className="text-center mb-8">
