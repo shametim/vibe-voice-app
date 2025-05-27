@@ -24,10 +24,10 @@ export const App = () => {
       <div className="w-full">
         <header className="text-center mb-8">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
-            Albanian Language Hangout
+            Hanga për Gjuhën Shqipe
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Chill, swap tips, and help boost the Albanian language!
+            Relaksoni, ndanëni tipet dhe ndihmoni në forcimin e gjuhës shqipe!
           </p>
         </header>
       </div>
@@ -70,75 +70,75 @@ export const App = () => {
 
         <section id="articles" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Featured Articles
+            Artikuj të Veçantë
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-amber-800">Albanian Language in Europe</h3>
-              <p className="text-gray-600 mt-2">An analysis of the history and position of the Albanian language in the European context.</p>
-              <p className="text-sm text-gray-500 mt-2">Written by: Liridh Krasniqi</p>
+              <h3 className="text-xl font-bold text-amber-800">Gjuha Shqipe në Europë</h3>
+              <p className="text-gray-600 mt-2">Analiza e historisë dhe pozicionit të gjuhës shqipe në kontekstin europian.</p>
+              <p className="text-sm text-gray-500 mt-2">Shkruar nga: Liridh Krasniqi</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-amber-800">Albanian Language in School</h3>
-              <p className="text-gray-600 mt-2">Discussion of the importance of teaching the Albanian language in school.</p>
-              <p className="text-sm text-gray-500 mt-2">Written by: Ermal Hoxha</p>
+              <h3 className="text-xl font-bold text-amber-800">Gjuha Shqipe në Shkollë</h3>
+              <p className="text-gray-600 mt-2">Diskutim i rëndësisë së mësimdhënies së gjuhës shqipe në shkollë.</p>
+              <p className="text-sm text-gray-500 mt-2">Shkruar nga: Ermal Hoxha</p>
             </div>
           </div>
         </section>
 
         <section id="topics" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Popular Topics
+            Temat Popullore
           </h2>
           <ul className="space-y-3">
             <li className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg text-amber-800">Albanian Language in Media</h3>
-              <p className="text-gray-600">Discussion of the use of the Albanian language in television, newspapers, and the internet.</p>
+              <h3 className="font-bold text-lg text-amber-800">Gjuha Shqipe në Media</h3>
+              <p className="text-gray-600">Diskutim i përdorimit të gjuhës shqipe në televizion, gazeta dhe internet.</p>
             </li>
             <li className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg text-amber-800">Albanian Language in Literature</h3>
-              <p className="text-gray-600">The role of the Albanian language in the development of national literature.</p>
+              <h3 className="font-bold text-lg text-amber-800">Gjuha Shqipe në Literaturë</h3>
+              <p className="text-gray-600">Roli i gjuhës shqipe në zhvillimin e literaturës kombëtare.</p>
             </li>
           </ul>
         </section>
 
         <section id="about" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            About the Forum
+            Rreth Forumit
           </h2>
           <p className="text-gray-800 leading-relaxed">
-            The Albanian Language Forum is a free platform for everyone interested in the Albanian language. Our goal is to promote the use of the Albanian language in daily life, education, and culture.
+            Forumi i Gjuhës Shqipe është një platformë e lirë për të gjithë ata që janë të interesuar në gjuhën shqipe. Qëllimi ynë është të promovojmë përdorimin e gjuhës shqipe në jetën e përditshme, në arsim dhe në kulturë.
           </p>
         </section>
 
         <section id="guidelines" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Community Guidelines
+            Rregullat e Komunitetit
           </h2>
           <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1">
-            <li>Respect all members.</li>
-            <li>Write in the Albanian language.</li>
-            <li>Avoid words that may cause conflict.</li>
-            <li>Follow forum rules.</li>
+            <li>Respektoni të gjithë anëtarët.</li>
+            <li>Shkruani në gjuhën shqipe.</li>
+            <li>Evitoni fjalët që mund të shkaktojnë konflikt.</li>
+            <li>Respektoni rregullat e forumit.</li>
           </ul>
         </section>
 
         <section id="contact" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Contact Us
+            Na Kontaktoni
           </h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Name
+                  Emri
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  placeholder="Your name"
+                  placeholder="Emri juaj"
                 />
               </div>
               <div>
@@ -150,32 +150,32 @@ export const App = () => {
                   id="email"
                   name="email"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  placeholder="Your email"
+                  placeholder="Email juaj"
                 />
               </div>
             </div>
             <div>
               <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                Subject
+                Tema
               </label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                placeholder="Subject"
+                placeholder="Tema"
               />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                Message
+                Mesazhi
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-                placeholder="Your message"
+                placeholder="Mesazhi juaj"
               />
             </div>
             <div>
@@ -183,7 +183,7 @@ export const App = () => {
                 type="submit"
                 className="w-full px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
               >
-                Send Message
+                Dërgo Mesazhin
               </button>
             </div>
           </form>
@@ -191,7 +191,7 @@ export const App = () => {
 
         <section id="images" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Searchable Images
+            Imazhe të Kërkueshme
           </h2>
           <form onSubmit={handleSearch} className="mb-4">
             <div className="flex flex-col md:flex-row gap-2">
@@ -199,14 +199,14 @@ export const App = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search for images..."
+                placeholder="Kërkoni imazhe..."
                 className="flex-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
               />
               <button
                 type="submit"
                 className="px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
               >
-                Search
+                Kërkoni
               </button>
             </div>
           </form>
@@ -216,13 +216,13 @@ export const App = () => {
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                   <img
                     src={url}
-                    alt={`Search result ${index + 1}`}
+                    alt={`Rezultat kërkimi ${index + 1}`}
                     className="w-full h-48 object-cover"
                   />
                 </div>
               ))
             ) : (
-              <p className="text-gray-500">No images found. Try a different search term.</p>
+              <p className="text-gray-500">Nuk u gjetën imazhe. Provoni një term tjetër kërkimi.</p>
             )}
           </div>
         </section>
