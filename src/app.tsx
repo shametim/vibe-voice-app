@@ -22,18 +22,18 @@ export const App = () => {
           </ul>
         </div>
 
-        {/* Right Column: Original Content */}
+        {/* Right Column: Marcela's Resume Content */}
         <div>
           <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-amber-800 font-serif">Hey Leka</h1>
-            <p className="text-lg text-gray-600 mt-2">Software Dev</p>
+            <h1 className="text-4xl font-bold text-amber-800 font-serif">Marcela</h1>
+            <p className="text-lg text-gray-600 mt-2">Accountant</p>
           </header>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Education</h2>
             <div className="ml-5 space-y-2">
-              <p>BS in Computer Science, University of Example</p>
-              <p>Graduated: May 2022</p>
+              <p>Bachelor of Science in Accounting, University of Michigan</p>
+              <p>Graduated: May 2020</p>
             </div>
           </section>
 
@@ -41,19 +41,20 @@ export const App = () => {
             <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Experience</h2>
             <div className="ml-5 space-y-4">
               <div>
-                <h3 className="font-medium">Senior Software Engineer</h3>
-                <p className="text-sm text-gray-500">Tech Corp | Jan 2023 – Present</p>
+                <h3 className="font-medium">Accountant</h3>
+                <p className="text-sm text-gray-500">University of Michigan | Jan 2021 – Present</p>
                 <ul className="list-disc ml-5 mt-1 space-y-1">
-                  <li>Developed scalable web applications using React and TypeScript.</li>
-                  <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
+                  <li>Manage financial records and ensure compliance with university and federal regulations.</li>
+                  <li>Prepare monthly financial reports and assist in budget forecasting.</li>
+                  <li>Coordinate with auditors and external stakeholders to maintain transparency and accuracy.</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-medium">Junior Developer</h3>
-                <p className="text-sm text-gray-500">Startup Inc | Jun 2021 – Dec 2022</p>
+                <h3 className="font-medium">Accounting Intern</h3>
+                <p className="text-sm text-gray-500">Michigan State University | May 2019 – Aug 2019</p>
                 <ul className="list-disc ml-5 mt-1 space-y-1">
-                  <li>Contributed to full-stack development using Node.js and MongoDB.</li>
-                  <li>Improved application performance by 30% through code optimization.</li>
+                  <li>Assisted in reconciling accounts and preparing tax documents.</li>
+                  <li>Supported the finance team in data entry and financial analysis.</li>
                 </ul>
               </div>
             </div>
@@ -63,11 +64,11 @@ export const App = () => {
             <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Skills</h2>
             <div className="ml-5">
               <ul className="list-disc ml-5 space-y-1">
-                <li>JavaScript / TypeScript</li>
-                <li>React, Next.js</li>
-                <li>Node.js, Express</li>
-                <li>Git, CI/CD</li>
-                <li>GitHub Co-Pilot</li>
+                <li>Financial Reporting</li>
+                <li>Accounting Software (QuickBooks, SAP)</li>
+                <li>Tax Preparation</li>
+                <li>Budget Forecasting</li>
+                <li>GAAP Compliance</li>
               </ul>
             </div>
           </section>
