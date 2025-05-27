@@ -67,6 +67,7 @@ export const App = () => {
                 <li>React, Next.js</li>
                 <li>Node.js, Express</li>
                 <li>Git, CI/CD</li>
+                <li>GitHub Co-Pilot</li>
               </ul>
             </div>
           </section>
