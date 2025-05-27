@@ -17,12 +17,12 @@ export const App = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Work Experience</h2>
         <div className="mb-6">
-          <h3 className="font-bold text-lg">Senior Software Engineer</h3>
-          <p className="text-gray-600">TechCorp Inc. | Jan 2020 – Present</p>
+          <h3 className="font-bold text-lg">Senior Full-Stack Developer</h3>
+          <p className="text-gray-600">Rocket Mortgage | Jan 2020 – Present</p>
           <ul className="list-disc list-inside mt-2 text-gray-700">
-            <li>Lead development of a high-traffic SaaS platform using React and Node.js.</li>
-            <li>Improved application performance by 40% through code optimization and caching strategies.</li>
-            <li>Collaborated with cross-functional teams to deliver features on time and within scope.</li>
+            <li>Architected and maintained loan origination systems using React, TypeScript, and Node.js.</li>
+            <li>Improved system performance by 40% through caching, database optimization, and microservices refactoring.</li>
+            <li>Collaborated with product and QA teams to deliver mortgage automation tools and customer-facing dashboards.</li>
           </ul>
         </div>
         <div>
