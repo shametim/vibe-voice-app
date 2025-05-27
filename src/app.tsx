@@ -1,7 +1,66 @@
 export const App = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-red-500">
-      <h1 className="text-2xl font-bold text-gray-800">Hello World</h1>
+    <div className="max-w-3xl mx-auto p-6 bg-white text-gray-800 shadow-lg rounded-lg">
+      <header className="text-center mb-8">
+        <h1 className="text-4xl font-bold">Amy Chen</h1>
+        <p className="text-lg text-gray-600 mt-2">Software Engineer | Full-Stack Developer</p>
+        <p className="text-sm text-gray-500 mt-1">amy.chen@example.com | (123) 456-7890 | linkedin.com/in/amy-chen</p>
+      </header>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Professional Summary</h2>
+        <p className="text-gray-700">
+          Results-driven software engineer with 5+ years of experience in full-stack development, specializing in building scalable web applications and APIs. Passionate about clean code, user experience, and agile methodologies.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Work Experience</h2>
+        <div className="mb-6">
+          <h3 className="font-bold text-lg">Senior Software Engineer</h3>
+          <p className="text-gray-600">TechCorp Inc. | Jan 2020 – Present</p>
+          <ul className="list-disc list-inside mt-2 text-gray-700">
+            <li>Lead development of a high-traffic SaaS platform using React and Node.js.</li>
+            <li>Improved application performance by 40% through code optimization and caching strategies.</li>
+            <li>Collaborated with cross-functional teams to deliver features on time and within scope.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg">Software Engineer</h3>
+          <p className="text-gray-600">InnovateTech | Jun 2017 – Dec 2019</p>
+          <ul className="list-disc list-inside mt-2 text-gray-700">
+            <li>Developed and maintained internal tools using Python and Django.</li>
+            <li>Implemented CI/CD pipelines using GitHub Actions and Docker.</li>
+            <li>Contributed to open-source projects and mentored junior developers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Education</h2>
+        <div>
+          <h3 className="font-bold text-lg">Bachelor of Science in Computer Science</h3>
+          <p className="text-gray-600">University of California, Berkeley | 2013 – 2017</p>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">Skills</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <ul className="text-gray-700">
+            <li>React, Next.js</li>
+            <li>Node.js, Express</li>
+            <li>TypeScript, JavaScript</li>
+            <li>Python, Django</li>
+          </ul>
+          <ul className="text-gray-700">
+            <li>Git, GitHub</li>
+            <li>RESTful APIs</li>
+            <li>Agile & Scrum</li>
+            <li>UI/UX Design</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
