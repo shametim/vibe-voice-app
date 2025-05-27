@@ -5,8 +5,8 @@ export const App = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column: Instructions (Overlay) */}
         <div className="p-6 bg-white border-r border-gray-200 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">How to Use</h2>
-          <ul className="space-y-3 text-sm text-gray-600">
+          <h2 className="text-2xl font-medium mb-4">How to Use</h2>
+          <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <strong>Change Name:</strong> Say "Change name to [Name]"
             </li>
@@ -25,12 +25,12 @@ export const App = () => {
         {/* Right Column: Marcela's Resume Content */}
         <div>
           <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-amber-800 font-serif">Marcela</h1>
+            <h1 className="text-4xl font-bold text-amber-600 font-sans shadow-md">Marcela</h1>
             <p className="text-lg text-gray-600 mt-2">Accountant</p>
           </header>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Education</h2>
+            <h2 className="text-2xl font-medium border-b border-gray-300 pb-1 mb-3">Education</h2>
             <div className="ml-5 space-y-2">
               <p>Bachelor of Science in Accounting, University of Michigan</p>
               <p>Graduated: May 2020</p>
@@ -38,8 +38,8 @@ export const App = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Experience</h2>
-            <div className="ml-5 space-y-4">
+            <h2 className="text-2xl font-medium border-b border-gray-300 pb-1 mb-3">Experience</h2>
+            <div className="ml-5 space-y-3">
               <div>
                 <h3 className="font-medium">Accountant</h3>
                 <p className="text-sm text-gray-500">University of Michigan | Jan 2021 – Present</p>
@@ -61,7 +61,7 @@ export const App = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Skills</h2>
+            <h2 className="text-2xl font-medium border-b border-gray-300 pb-1 mb-3">Skills</h2>
             <div className="ml-5">
               <ul className="list-disc ml-5 space-y-1">
                 <li>Financial Reporting</li>
