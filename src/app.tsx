@@ -26,7 +26,7 @@ export const App = () => {
         <div>
           <header className="text-center mb-8">
             <h1 className="text-4xl font-bold text-amber-600 font-sans shadow-md">
-              University of Michigan Financial Services
+              Hey there! Welcome to UMich Financial Services
             </h1>
             <p className="text-lg text-gray-600 mt-2">Shared Services Center</p>
           </header>
