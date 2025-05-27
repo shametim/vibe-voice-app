@@ -27,7 +27,6 @@ export const App = () => {
           interimTranscript += event.results[i][0].transcript;
         }
       }
-      // Update UI with final and interim results
       setTranscription(prev => prev.replace(/.*\n/, '') + interimTranscript);
     };
 
@@ -62,44 +61,44 @@ export const App = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-col bg-white">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">Hey Martin!</h1>
-        <p className="text-xl text-gray-600 mt-2">Software Dev | Web Dev | Open Source Enthusiast</p>
+        <h1 className="text-4xl font-bold text-gray-800">Albanian Travel Tips</h1>
+        <p className="text-xl text-gray-600 mt-2">Discover the beauty of Albania</p>
         <div className="mt-4 flex justify-center space-x-4 text-gray-500">
-          <span>john.doe@example.com</span>
+          <span>albania.travel@example.com</span>
           <span>•</span>
           <span>(555) 123-4567</span>
           <span>•</span>
-          <span>linkedin.com/in/martin</span>
+          <span>linkedin.com/in/albania</span>
         </div>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Left Column - Contact & Summary */}
+        {/* Left Column - Travel Tips & Highlights */}
         <div className="md:col-span-1 space-y-8">
           <section>
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">Professional Summary</h2>
+            <h2 className="text-xl font-semibold text-gray-700 mb-3">Why Visit Albania?</h2>
             <p className="text-gray-600 leading-relaxed">
-              Passionate about building scalable web apps with 5+ years of experience. I love working in full-stack environments using React and Node.js. Big fan of clean code and agile teams that ship fast and ship well.
+              Albania is a hidden gem in the Balkans with stunning landscapes, rich history, and warm hospitality. From the rugged mountains of the north to the pristine beaches of the south, there's something for every traveler.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">Technical Skills</h2>
+            <h2 className="text-xl font-semibold text-gray-700 mb-3">Top Destinations</h2>
             <ul className="space-y-2 text-gray-600">
-              <li>• 🚀 JavaScript/TypeScript, React, Node.js</li>
-              <li>• 🌐 REST APIs, GraphQL</li>
-              <li>• 🗄️ MongoDB, PostgreSQL</li>
-              <li>• 🐳 Docker, AWS</li>
-              <li>• 🔄 Agile/Scrum, CI/CD</li>
+              <li>• 🏔️ Theth & Valbona Valleys</li>
+              <li>• 🌊 Ksamil & Saranda Beaches</li>
+              <li>• 🏰 Berat – The City of a Thousand Windows</li>
+              <li>• 🏞️ Lake Koman & National Parks</li>
+              <li>• 🏙️ Tirana – Vibrant Capital City</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">Education</h2>
+            <h2 className="text-xl font-semibold text-gray-700 mb-3">Cultural Tips</h2>
             <div className="text-gray-600">
-              <p><strong>Bachelor of Science in Computer Science</strong></p>
-              <p>University of Techlandia, 2015-2019</p>
-              <p>Graduated with honors (GPA: 3.8/4.0)</p>
+              <p><strong>• Greeting:</strong> A simple "Përshëndetje" (Hello) goes a long way.</p>
+              <p><strong>• Food:</strong> Try fërgesë, byrek, and rakia.</p>
+              <p><strong>• Language:</strong> Learn a few basic Albanian phrases – locals love it!</p>
             </div>
           </section>
 
@@ -152,54 +151,53 @@ export const App = () => {
           </section>
         </div>
 
-        {/* Right Column - Experience */}
+        {/* Right Column - Travel Advice & Experiences */}
         <div className="md:col-span-2 space-y-8">
           <section>
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">Professional Experience</h2>
+            <h2 className="text-xl font-semibold text-gray-700 mb-3">Travel Advice</h2>
             
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-gray-800">Senior Software Engineer</h3>
-              <p className="text-gray-500 mb-2">InnovateTech Solutions • 2020 - Present</p>
+              <h3 className="text-lg font-medium text-gray-800">Getting Around</h3>
+              <p className="text-gray-500 mb-2">Buses and taxis are common, but renting a car is ideal for exploring rural areas.</p>
               <ul className="list-disc list-inside text-gray-600 ml-5 space-y-1">
-                <li>Lead development of company's flagship SaaS product used by 100k+ users</li>
-                <li>Architected microservices using Node.js and Docker, reducing deployment time by 40%</li>
-                <li>Implemented CI/CD pipelines with GitHub Actions and AWS</li>
-                <li>Mentored 5 junior developers and conducted code reviews</li>
+                <li>Uber and Bolt are available in major cities.</li>
+                <li>Public transport is affordable but can be unreliable in remote areas.</li>
+                <li>Driving is on the right side; roads vary in quality.</li>
               </ul>
             </div>
 
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-gray-800">Software Engineer</h3>
-              <p className="text-gray-500 mb-2">CodeCraft Inc • 2018 - 2020</p>
+              <h3 className="text-lg font-medium text-gray-800">Safety Tips</h3>
+              <p className="text-gray-500 mb-2">Albania is generally safe, but be cautious in crowded areas and with your belongings.</p>
               <ul className="list-disc list-inside text-gray-600 ml-5 space-y-1">
-                <li>Developed and maintained React-based dashboard for enterprise clients</li>
-                <li>Integrated third-party APIs for payment processing and analytics</li>
-                <li>Improved application performance by 35% through code optimization</li>
+                <li>Keep valuables secure in hostels and public places.</li>
+                <li>Be mindful of road conditions in mountainous regions.</li>
+                <li>Respect local customs and dress modestly in religious sites.</li>
               </ul>
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">Projects</h2>
+            <h2 className="text-xl font-semibold text-gray-700 mb-3">Local Experiences</h2>
             
             <div className="mb-4">
-              <h3 className="text-lg font-medium text-gray-800">Open Source Blog Platform</h3>
-              <p className="text-gray-500 mb-1">React + Node.js + MongoDB</p>
-              <p className="text-gray-600 text-sm">Full-stack blogging platform with real-time collaboration features</p>
+              <h3 className="text-lg font-medium text-gray-800">Festivals & Events</h3>
+              <p className="text-gray-500 mb-1">Albania has vibrant festivals throughout the year.</p>
+              <p className="text-gray-600 text-sm">Don't miss the Tirana International Film Festival or the Krujë Medieval Festival in May.</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-gray-800">Task Management App</h3>
-              <p className="text-gray-500 mb-1">Vue.js + Firebase</p>
-              <p className="text-gray-600 text-sm">Cross-platform task manager with calendar integration and team collaboration</p>
+              <h3 className="text-lg font-medium text-gray-800">Culinary Highlights</h3>
+              <p className="text-gray-500 mb-1">Albanian cuisine is hearty and flavorful.</p>
+              <p className="text-gray-600 text-sm">Try grilled meats, fresh seafood, and traditional raki. Street food is also a must-try!</p>
             </div>
           </section>
         </div>
       </div>
 
       <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
-        <p>123 Main Street, Tech City, TC 12345</p>
-        <p>Resume last updated: {new Date().toLocaleDateString()}</p>
+        <p>123 Main Street, Tirana, Albania</p>
+        <p>Travel Tips Updated: {new Date().toLocaleDateString()}</p>
       </footer>
     </div>
   );
