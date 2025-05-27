@@ -1,8 +1,27 @@
+import { useState } from 'react';
+
 export const App = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<string[]>([]);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    // TODO: Replace with actual image search API call
+    // Example: fetch(`https://api.unsplash.com/search/photos?query=${searchQuery}`)
+    //          .then(res => res.json())
+    //          .then(data => setSearchResults(data.urls));
+    setSearchResults([
+      'https://source.unsplash.com/featured/?albania',
+      'https://source.unsplash.com/featured/?language',
+      'https://source.unsplash.com/featured/?culture',
+      'https://source.unsplash.com/featured/?albanian',
+    ]);
+  };
+
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-row bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhESMIAAAAABJRU5ErkJggg==')] bg-cover bg-center bg-fixed">
+    <div className="max-w-5xl mx-auto p-6 bg-amber-50 text-gray-900 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-col bg-fixed">
       {/* Left Half: Forum Header */}
-      <div className="w-1/2">
+      <div className="w-full">
         <header className="text-center mb-8">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
             Albanian Language Hangout
@@ -40,6 +59,11 @@ export const App = () => {
           <a href="#contact" className="text-amber-600 hover:text-amber-800 transition-all">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+          <a href="#images" className="text-amber-600 hover:text-amber-800 transition-all">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg>
           </a>
         </nav>
@@ -163,6 +187,44 @@ export const App = () => {
               </button>
             </div>
           </form>
+        </section>
+
+        <section id="images" className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
+            Searchable Images
+          </h2>
+          <form onSubmit={handleSearch} className="mb-4">
+            <div className="flex flex-col md:flex-row gap-2">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search for images..."
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <button
+                type="submit"
+                className="px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {searchResults.length > 0 ? (
+              searchResults.map((url, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <img
+                    src={url}
+                    alt={`Search result ${index + 1}`}
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-500">No images found. Try a different search term.</p>
+            )}
+          </div>
         </section>
       </div>
     </div>
