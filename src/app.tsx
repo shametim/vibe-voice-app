@@ -6,8 +6,8 @@ export const App = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Replace with actual image search API call
-    // Example: fetch(`https://api.unsplash.com/search/photos?query=${searchQuery}`)
+    // TODO: Zëvendëso me thirrje reale në API për kërkim imazhesh
+    // Shembull: fetch(`https://api.unsplash.com/search/photos?query=${searchQuery}`)
     //          .then(res => res.json())
     //          .then(data => setSearchResults(data.urls));
     setSearchResults([
@@ -24,10 +24,10 @@ export const App = () => {
       <div className="w-full">
         <header className="text-center mb-8">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent">
-            Hanga për Gjuhën Shqipe
+            Forumi i Lirë i Gjuhës Shqipe
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Relaksoni, ndanëni tipet dhe ndihmoni në forcimin e gjuhës shqipe!
+            Relaksoni, ndani tipet dhe ndihmoni të gjithë bashkë!
           </p>
         </header>
       </div>
@@ -70,7 +70,7 @@ export const App = () => {
 
         <section id="articles" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Artikuj të Veçantë
+            Artikuj Të Veçanta
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-4 rounded-lg shadow-md">
@@ -88,7 +88,7 @@ export const App = () => {
 
         <section id="topics" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Temat Popullore
+            Temat më Popullore
           </h2>
           <ul className="space-y-3">
             <li className="bg-white p-4 rounded-lg shadow-md">
@@ -104,7 +104,7 @@ export const App = () => {
 
         <section id="about" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Rreth Forumit
+            Rreth këtij Forumi
           </h2>
           <p className="text-gray-800 leading-relaxed">
             Forumi i Gjuhës Shqipe është një platformë e lirë për të gjithë ata që janë të interesuar në gjuhën shqipe. Qëllimi ynë është të promovojmë përdorimin e gjuhës shqipe në jetën e përditshme, në arsim dhe në kulturë.
@@ -125,7 +125,7 @@ export const App = () => {
 
         <section id="contact" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Na Kontaktoni
+            Na kontaktoni
           </h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -183,7 +183,7 @@ export const App = () => {
                 type="submit"
                 className="w-full px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
               >
-                Dërgo Mesazhin
+                Dërgo mesazhin
               </button>
             </div>
           </form>
@@ -191,7 +191,7 @@ export const App = () => {
 
         <section id="images" className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1 bg-amber-100 px-3 py-1 rounded-lg inline-block">
-            Imazhe të Kërkueshme
+            Kërko Imazhe
           </h2>
           <form onSubmit={handleSearch} className="mb-4">
             <div className="flex flex-col md:flex-row gap-2">
@@ -199,14 +199,14 @@ export const App = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Kërkoni imazhe..."
+                placeholder="Kërko imazhe..."
                 className="flex-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
               />
               <button
                 type="submit"
                 className="px-4 py-2 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
               >
-                Kërkoni
+                Kërko
               </button>
             </div>
           </form>
