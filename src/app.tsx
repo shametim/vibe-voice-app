@@ -4,14 +4,14 @@ export const App = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 shadow-xl rounded-xl transition-all duration-300 hover:shadow-2xl relative flex flex-col bg-white">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">John Doe</h1>
+        <h1 className="text-4xl font-bold text-gray-800">Martin</h1>
         <p className="text-xl text-gray-600 mt-2">Software Dev | Web Dev | Open Source Enthusiast</p>
         <div className="mt-4 flex justify-center space-x-4 text-gray-500">
           <span>john.doe@example.com</span>
           <span>•</span>
           <span>(555) 123-4567</span>
           <span>•</span>
-          <span>linkedin.com/in/johndoe</span>
+          <span>linkedin.com/in/martin</span>
         </div>
       </header>
 
