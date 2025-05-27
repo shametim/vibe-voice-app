@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/app.tsx",
+    "./src/**/*.{js,ts,jsx,tsx}", // This includes all .js, .ts, .jsx, and .tsx files in the src directory
     "./index.html",
   ],
   theme: {
