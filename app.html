@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="tailwindcss" />
-    <!-- SEO Meta Tags -->
-    <meta charset="UTF-8" />
+    <script type="module" src="./frontend2.tsx"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./frontend.tsx"></script>
-
-    <!-- Tailwind CSS via CDN -->
 </head>
 
-<body class="bg-gray-50 scroll-smooth">
+<body>
+
     <div id="root"></div>
 
     <!-- Static instruction box -->
     <div class="fixed bottom-4 right-4 bg-gray-800 text-white text-xs px-3 py-1 rounded-lg shadow-lg z-50">
-        (Chrome only) Click to speak to change website
+        (Chrome only) Click and talk for changes
     </div>
+
 
     <script>
         // Web Speech API setup
@@ -52,11 +49,7 @@
                     .catch(err => {
                         console.error("Failed to send instruction:", err);
                     })
-                    .finally(() => {
-                        // setTimeout(() => {
-                        //     document.
-                        // }, 500);
-                    });
+                    .finally(() => { });
             };
 
             // Start recognition on the first user click

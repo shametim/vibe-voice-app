@@ -1,6 +1,5 @@
 import { serve } from "bun";
 import index from "./index.html";
-
 serve({
     port: 80,
     routes: {
